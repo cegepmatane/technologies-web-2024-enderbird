@@ -1,0 +1,31 @@
+/* css reset (IDK) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "MinecraftFontRegular";
+    src: url("../fonts/1_MinecraftRegular1.otf");
+}
+
+body {
+    background: linear-gradient(90deg, rgba(9,9,121,1) 17%, rgba(7,61,156,1) 31%, rgba(88,5,185,1) 46%, rgba(4,119,193,1) 70%, rgba(79,3,214,1) 85%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "MinecraftFontRegular", sans-serif;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    /* ENLEVER PUCES */
+}
