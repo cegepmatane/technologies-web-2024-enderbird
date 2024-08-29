@@ -5,17 +5,22 @@
     box-sizing: border-box;
 }
 
+/* CUSTOM FONTS */
 @font-face {
     font-family: "MinecraftFontRegular";
     src: url("../fonts/1_MinecraftRegular1.otf");
 }
 
+@font-face {
+    font-family: "MinecraftFontBold";
+    src: url("../fonts/3_MinecraftBold1.otf");
+}
+
 body {
-    background: linear-gradient(90deg, rgba(9,9,121,1) 17%, rgba(7,61,156,1) 31%, rgba(88,5,185,1) 46%, rgba(4,119,193,1) 70%, rgba(79,3,214,1) 85%);
+    background: linear-gradient(15deg, rgb(27, 11, 80) 0%, rgb(79, 5, 164) 30%, rgb(4, 105, 193) 70%, rgb(80, 3, 214) 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: "MinecraftFontRegular", sans-serif;
 }
 
 nav {
@@ -23,9 +28,79 @@ nav {
     position: fixed;
     top: 0;
     z-index: 100;
+    font-family: "MinecraftFontRegular", sans-serif; /* la font-family était dans - body { - */
 }
 
 nav ul {
-    list-style-type: none;
-    /* ENLEVER PUCES */
+    list-style-type: none; /* ENLEVER PUCES */
+}
+
+nav li {
+    float: left;
+    width: 14.28571%;
+    position: static;
+    background-color: rgba(44, 28, 97, 0.884);
+    text-align: center;
+}
+
+nav li:hover {
+    background-color: rgba(203, 220, 255, 0.685);
+}
+
+nav li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color:rgb(193, 212, 255);
+    /* font-weight: 10; */
+    border: 5px solid rgba(36, 19, 90, 0.229);
+}
+
+nav li a:hover {
+    font-family: "MinecraftFontBold"; /* mettre en bold le texte du bouton sélectionné */
+    color: rgb(44, 28, 97);
+    /* background-color: rgba(214, 243, 255, 0.682);  IDK IF IT IS NECESSAIRY, BUT IT DOES SOMETHING!!!!*/
+}
+
+/* C'est pour afficher la séléction de la page sur la barre */
+nav li a.actif {
+    color:#190044;
+    background-color: rgba(179, 175, 253, 0.773);
+    border: 5px solid rgba(179, 175, 253, 0.773); /* nav li a.info-border */
+}
+
+nav li a.actif:hover {
+    color: rgb(250, 246, 255);
+    background-color: rgba(79, 17, 149, 0.505);
+}
+
+/* C'est pour les sous-info quand on a sélectionné une page sous-info (border) */
+.info-border {
+    border: 5px solid rgba(179, 175, 253, 0.773);
+}
+
+/* sous-menu quand rien se passeeeee */
+nav li ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul li:hover ul{
+    display: block;
+}    
+
+nav ul li:hover ul li{
+    float: none;
+}
+
+/* pour faire garder le texte du bouton Informations */
+nav ul li:hover > a.text-color {
+    color: rgb(44, 28, 97);
+}
+
+/* image header */
+.header{
+    width: 100%; /* pour prendre tout l'écran en largeur*/
 }
