@@ -10,10 +10,14 @@
     font-family: "MinecraftFontRegular";
     src: url("../fonts/1_MinecraftRegular1.otf");
 }
-
 @font-face {
     font-family: "MinecraftFontBold";
     src: url("../fonts/3_MinecraftBold1.otf");
+}
+
+@font-face {
+    font-family: "ProFontWindowsRegular";
+    src: url("../fonts/Profontwindows-axBMx.ttf");
 }
 
 body {

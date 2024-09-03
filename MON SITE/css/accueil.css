@@ -1,0 +1,37 @@
+/* text border and idk (POUR LES PARAGRAPHES LISIBLES OU EN GENERAL */
+.header {
+  /* couleur spécifique (dépendant l'image header) */
+  border-bottom: 8px solid rgb(46, 29, 29);
+}
+
+h1 {
+  font-family: "MinecraftFontBold";
+  font-size: 2.5em;
+  text-align: center;
+}
+.titre {
+  border: 4px solid black;
+  padding: 12px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.container {
+  width: 100%;
+  background-color: aliceblue;
+  margin: auto;
+}
+
+p {
+  font-family: "ProFontWindowsRegular";
+  font-size: 1.2em;
+}
+.container-text {
+  background: rgba(241, 154, 212, 0.308);
+  border: 5px solid black;
+  padding: 15px;
+  width: 47%;
+  /* Top Right Bottom Left */
+  margin: 40px 20px 0px 20px;
+}
