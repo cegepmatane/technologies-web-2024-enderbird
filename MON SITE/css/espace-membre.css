@@ -1,0 +1,88 @@
+@import url(general.css);
+
+body {
+    background-color: #333;
+}
+
+h1 {
+    font-family: "MinecraftFontBold";
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+form {
+    font-family: "MinecraftFontRegular";
+    font-size: 1.4em;
+    background: linear-gradient(2deg, rgba(113, 94, 255, 0.5), rgba(214, 183, 253, 0.674));
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 60%;
+}
+
+input[type="text"], input[type="password"], input[type="submit"] {
+    font-family: "MinecraftFontRegular";
+    font-size: 0.9em;
+    width: 80%;
+    border: 0;
+    background-color: #ffffffbd;
+}
+
+input[type="text"]:hover, input[type="password"]:hover { /* submit removed */
+    background-color: rgb(255, 255, 255);
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="submit"]:focus {
+    outline: 4px solid black;
+}
+
+.input-container {
+    text-align: center;
+    margin: 1em;
+}
+
+
+.pseudo {
+    background: url("../images/user.png");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    padding-left: 35px;
+}
+
+.password {
+    background: url("../images/password.png");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    padding-left: 35px;
+}
+
+input[type="submit"] {
+    padding: 30px;
+    width: 40%;
+    background-color: rgb(25, 0, 88);
+    color: rgb(255, 255, 255);
+    border: 0;
+    transition: transform 1s; /* Animation */
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.05);
+    box-shadow: rgb(255, 204, 0) 10px 22px 70px 4px;
+}
+
+
+/* interresting */
+@media screen and (max-width:500px) {
+    .container {
+        width: 100%;
+    }
+}

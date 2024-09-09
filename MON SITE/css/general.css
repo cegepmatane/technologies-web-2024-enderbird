@@ -33,6 +33,7 @@ nav {
     top: 0;
     z-index: 100;
     font-family: "MinecraftFontRegular", sans-serif; /* la font-family était dans - body { - */
+    font-size: 1.1em;
 }
 
 nav ul {
@@ -70,12 +71,13 @@ nav li a:hover {
 nav li a.actif {
     color:#190044;
     background-color: rgba(179, 175, 253, 0.773);
-    border: 5px solid rgba(179, 175, 253, 0.773); /* nav li a.info-border */
+    border: 5px solid rgba(179, 175, 253, 0.284); /* nav li a.info-border */
 }
 
 nav li a.actif:hover {
     color: rgb(250, 246, 255);
     background-color: rgba(79, 17, 149, 0.505);
+    border: 5px solid rgba(79, 17, 149, 0.329);
 }
 
 /* C'est pour les sous-info quand on a sélectionné une page sous-info (border) */
@@ -106,5 +108,17 @@ nav ul li:hover > a.text-color {
 
 /* image header */
 .header{
+    /* couleur spécifique (dépendant l'image header) */
+    border-bottom: 8px solid rgb(11, 7, 17);
     width: 100%; /* pour prendre tout l'écran en largeur*/
+}
+
+.titre-header {
+  background: rgba(164, 146, 255, 0.742);
+  border: 4px solid black;
+  padding: 12px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
