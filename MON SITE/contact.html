@@ -4,29 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
     <title>Contact - Confusion SMP</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="horaire.html">Horaire</a></li>
-                <li><a href="mise-a-jour.html">Mise à jour</a></li>
-                <li><a href="membre.html">Espace membre</a></li>
-                <li>
-                    <a href="informations.html" class="text-color">Informations</a>
-                    <ul>
-                        <li><a href="sous-info1.html">1</a></li>
-                        <li><a href="sous-info2.html">2</a></li>
-                        <li><a href="sous-info3.html">3</a></li>
-                        <li><a href="sous-info4.html">4</a></li>
-                    </ul>
-                </li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html" class="actif">Contact</a></li>
-            </ul>
+          <ul>
+            <li>
+              <a href="index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+            </li>
+  
+            <li>
+              <a href="informations.html" class="text-color"><i class="fa-solid fa-circle-info"></i> Informations</a>
+              <ul>
+                <li><a href="sous-info1.html">1</a></li>
+                <li><a href="sous-info2.html">2</a></li>
+                <li><a href="sous-info3.html">3</a></li>
+                <li><a href="sous-info4.html">4</a></li>
+              </ul>
+            </li>
+  
+            <li>
+              <a href="mission.html"><i class="fa-solid fa-cube"></i> Mission</a>
+            </li>
+            
+            <li>
+              <a href="espace-membre.html"><i class="fa-solid fa-headset"></i> Espace membre</a>
+            </li>
+  
+            <li>
+              <a href="contact.html" class="actif"><i class="fa-sharp fa-solid fa-envelope"></i> Contact</a>
+            </li>
+            
+            <li>
+              <a href="faq.html"><i class="fa-solid fa-clipboard-question"></i> FAQ</a>
+            </li>
+  
+            <li>
+              <a href="mise-a-jour.html"><i class="fa-regular fa-star"></i> Mise à jour</a>
+            </li>
+          </ul>
         </nav>
-    </header>
-    <img src="images/2023-04-08_17.34.14 - Copy.png" class="header"alt="header-image">
+      </header>
+    <img src="images/headerAccueilImage.png" class="header"alt="header-image">
+
+    <div class="titre-header">
+        <h1>Contact</h1>
+    </div>
+
+    <div class="container">
+        <form action="traitement.html" method="post">
+            <fieldset>
+                <div for="email" class="input-container">
+                    <label for="email">De :</label>
+                    <input type="email" name="email" id="email" placeholder="Email" autofocus>
+                </div>
+
+                <div class="input-container">
+                    <label for="reason">Raison</label>
+                    <select name="reason" id="reason">
+                        <option value="Connection">Connection</option>
+                        <option value="Whitelisting">Whitelisting</option>
+                        <option value="Unban">Unban</option>
+                        <option value="Pls HELP">aide</option>
+                    </select>
+                </div>
+
+                <div class="input-container">
+                    <label for="description">Description</label>
+                    <input type="text" name="description" id="description">
+                </div>
+
+                <div class="input-container">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </fieldset>
+        </form>
+    </div>
