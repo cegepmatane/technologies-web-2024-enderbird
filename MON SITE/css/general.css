@@ -22,12 +22,12 @@
 }
 
 body {
-    background: url(../images/Amethyst-Block.jpg);
-    background-size: 6%;
+    background: url(../images/Amethyst-Block.png);
+    background-size: 5%;
     /* background: linear-gradient(15deg, rgb(27, 11, 80) 0%, rgb(79, 5, 164) 30%, rgb(4, 105, 193) 70%, rgb(80, 3, 214) 100%);
     background-size: cover;
     background-repeat: no-repeat; */
-    background-attachment: fixed;
+    background-attachment: local;
 }
 
 nav {
@@ -36,7 +36,7 @@ nav {
     top: 0;
     z-index: 100;
     font-family: "MinecraftFontRegular", sans-serif; /* la font-family était dans - body { - */
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 nav ul {
@@ -116,7 +116,7 @@ nav ul li:hover > a.text-color {
 }
 
 .titre-header {
-  background: rgba(164, 146, 255, 0.742);
+  background: rgba(201, 190, 255, 0.863);
   border: 4px solid black;
   padding: 12px;
   width: 40%;

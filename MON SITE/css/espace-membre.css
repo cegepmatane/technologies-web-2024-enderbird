@@ -1,7 +1,9 @@
 @import url(general.css);
 
 body {
-    background-color: #333;
+    background: url(../images/Crying-Obsidian-Block.png);
+    background-size: 5%;
+    background-attachment: local;
 }
 
 h1 {
@@ -14,8 +16,8 @@ h1 {
 
 form {
     font-family: "MinecraftFontRegular";
-    font-size: 1.4em;
-    background: linear-gradient(2deg, rgba(113, 94, 255, 0.5), rgba(214, 183, 253, 0.674));
+    font-size: 1.1em;
+    background: linear-gradient(2deg, rgba(114, 104, 189, 0.932), rgb(192, 164, 226));
     color:rgb(0, 0, 0);
     font-weight: bold;
     border: 5px solid rgb(0, 0, 0);
@@ -29,8 +31,10 @@ form {
 
 input[type="text"], input[type="password"], input[type="submit"] {
     font-family: "MinecraftFontRegular";
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 0;
     background-color: #ffffffbd;
 }
@@ -48,25 +52,23 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="submit"]:foc
     margin: 1em;
 }
 
-
 .pseudo {
     background: url("../images/user.png");
+}
+.password {
+    background: url("../images/password.png");
+}
+.pseudo, .password {
     background-repeat: no-repeat;
     background-position: 5px;
     padding-left: 35px;
 }
 
-.password {
-    background: url("../images/password.png");
-    background-repeat: no-repeat;
-    background-position: 5px;
-    padding-left: 35px;
-}
 
 input[type="submit"] {
     padding: 30px;
     width: 40%;
-    background-color: rgb(25, 0, 88);
+    background-color: rgb(45, 0, 88);
     color: rgb(255, 255, 255);
     border: 0;
     transition: transform 1s; /* Animation */
@@ -76,7 +78,7 @@ input[type="submit"]:hover {
     background-color: rgb(255, 255, 255);
     color: black;
     transform: scale(1.05);
-    box-shadow: rgb(255, 204, 0) 10px 22px 70px 4px;
+    box-shadow: rgb(255, 224, 51) 0px 30px 90px 20px;
 }
 
 
