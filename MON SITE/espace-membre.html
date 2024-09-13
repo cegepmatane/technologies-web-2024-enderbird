@@ -62,24 +62,27 @@
     <div class="container">
         <form action="traitement.html" method="post">
             <fieldset>
-              <legend><label for="pseudo">Pseudonyme :</label></legend>
-
               <div class="input-container">
+                <label for="pseudo">Pseudonyme :</label>
+              
                   <input type="text" class="pseudo" name="pseudo" id="pseudo" placeholder="Entrez votre nom d'utilisateur" autofocus>
               </div>
             </fieldset>
             
             <fieldset>
-              <legend><label for="password">Mot de passe :</label></legend>
+             
                 
               <div class="input-container">
+                  <label for="password">Mot de passe :</label>
                   <input type="password" class="password" name="password" id="password" placeholder="Entrez votre mot de passe">
+              </div>           
+              
+              <div class="input-container">
+                <input type="submit" class="submit" value="Connection">
               </div>
             </fieldset>
 
-            <div class="input-container">
-                <input type="submit" class="submit" value="Connection">
-            </div>
+
         </form>
     </div>
 </body>

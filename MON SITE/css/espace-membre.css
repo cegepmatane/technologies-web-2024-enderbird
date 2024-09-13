@@ -15,13 +15,18 @@ h1 {
 }
 
 form {
+    padding: 10px;
     font-family: "MinecraftFontRegular";
     font-size: 1.1em;
     background: linear-gradient(2deg, rgba(114, 104, 189, 0.932), rgb(192, 164, 226));
     color:rgb(0, 0, 0);
     font-weight: bold;
     border: 5px solid rgb(0, 0, 0);
-    padding: 10px;
+}
+
+fieldset {
+    border: 4px solid rgb(0, 0, 0);
+    margin: 2px;
 }
 
 .container {

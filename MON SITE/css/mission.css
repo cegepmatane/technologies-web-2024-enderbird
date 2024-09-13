@@ -12,22 +12,10 @@ h2 {
 }
   
 table {
-    border: 2px solid rgb(60, 37, 103);
+    border: 2px solid rgb(0, 6, 58);
     border-spacing: 0px;
     width: 100%;
     font-family: "MinecraftFontRegular";
-}
-
-td, th {
-    border: 2px solid rgb(60, 37, 103);
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background-color: #ba74cd;
-    color: #000000;
-    line-height: 1.3em;
 }
 
 caption {
@@ -37,7 +25,19 @@ caption {
     letter-spacing: 10px;
     padding: 10px;
     background-color: #ffffff;
-    border: solid 10px rgb(255, 246, 234);
+    border: solid 10px rgb(170, 229, 255);
+}
+
+td, th {
+    border: 2px solid rgb(0, 6, 58);
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #acb3e8;
+    color: #000000;
+    line-height: 1.5em;
 }
 
 .container-table {
@@ -46,9 +46,13 @@ caption {
     width: 90%;
 }
 
-.stat-pair {
-    background-color: rgb(217, 208, 255);
+.stat {
+    background-color: rgb(255, 222, 171);
 }
-.stat-impair {
-    background-color: rgb(255, 234, 208);
+
+.stat-membre {
+    background-color: rgb(230, 227, 255);
+}
+.stat-admin {
+    background-color: rgb(255, 225, 251);
 }
