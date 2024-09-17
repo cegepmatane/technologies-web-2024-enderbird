@@ -24,9 +24,6 @@
 body {
     background: url(../images/Amethyst-Block.png);
     background-size: 5%;
-    /* background: linear-gradient(15deg, rgb(27, 11, 80) 0%, rgb(79, 5, 164) 30%, rgb(4, 105, 193) 70%, rgb(80, 3, 214) 100%);
-    background-size: cover;
-    background-repeat: no-repeat; */
     background-attachment: local;
 }
 
