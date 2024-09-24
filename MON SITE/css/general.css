@@ -113,7 +113,7 @@ nav ul li:hover > a.text-color {
 }
 
 .titre-header {
-  background: rgba(201, 190, 255, 0.863);
+  background: rgb(183, 171, 239);
   border: 4px solid black;
   padding: 12px;
   width: 40%;
@@ -130,90 +130,113 @@ i {
 /* FOOTER (BAS DE PAGE COPYRIGHT */
 
 .container {
-    height: 150vh;
+    height: 100vh;
 }
 
 
 footer {
-    background-color: rgb(27, 11, 52);
+    background: url(../images/Purple-Wool-Block.png);
+    background-size: 10%;
+    background-attachment: local;
     box-sizing: border-box;
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     position: relative;
-  }
+}
   
-  .copyright {
+.copyright {
     position: absolute; /* parent doit être en relative quand absolute */
     top: 50px;
     left: 50px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
-  }
-  
-  .social-icons {
-    text-align: end;
-  }
-  
-  /* icons */
-  .social-icons li {
-    position: relative;
-    right: 30px;
-    display: inline-block;
-    margin: 0px 5px 0px 5px;
-    font-size: 24px;
-    list-style-type: none;
-    border-radius: 100%;
+    color: white;
+    font-family: "MinecraftFontRegular", sans-serif;
+    animation: ranbow-copyright 5s infinite;
+}
 
-    transition: transform 2s ease-in-out;
-    animation-duration: 5s;
-  }
-  
-  @keyframes slideintest {
-      0% {
-        transform: rotate(0turn) scale(0.0001, 1) skew(180deg);
-      }
-  
-      50% {
-        transform: rotate(2turn);
-      }
-  
-      100% {
-        transform: rotate(1, 0.0001); 
-      }
+@keyframes ranbow-copyright {
+    25% {
+        text-shadow: -1px -1px 2px #00d9ff, 1px 1px 2px #00d9ff;
     }
+
+    50% {
+        text-shadow: none;
+    }
+
+    75% {
+        text-shadow: -1px -1px 2px #ea00ff, 1px 1px 2px #ea00ff;
+    }
+}
+
+.social-icons {
+    text-align: right;
+    border: 4px solid white;
+    box-shadow: -1px -1px 3px #d0d0d0, 1px 1px 3px #d0d0d0;
+}
   
-  .social-icons li:hover {
-    animation-name: slideintest;
-    
-    box-shadow: 0 10px 10px rgb(243, 129, 129);
-  }
+/* icons */
+.social-icons li {
+    position: relative;
+    right: 10px;
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px 0px 5px 5px;
+    /* list-style-type: none; */
+    margin: 20px 10px 20px 0;
+}
   
-  .social-icons li a {
+@keyframes icon-animation {
+    0% {
+        transform: none;
+        box-shadow: none;
+        filter: none;
+    }
+    25%{
+        transition: transform ease-in-out;
+        transform: scale(0.95);
+        filter: blur(2px);
+    }
+    50% {
+        filter: hue-rotate(-40deg);
+        box-shadow: none;
+        transform: translateY(0);
+    }
+}
+  
+.social-icons li:hover {
+    /* animation: icon-animation 2s ease-in-out infinite; */
+    animation: icon-animation 2s;
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow: 0 5px 3px rgb(231, 198, 255);
+}
+  
+.social-icons li a {
+    padding: 17px;
     display: block;
     color: #fff;
-    padding: 17px;
-    width: 100%;
-  }
+}
   
-  .social-icons li:nth-child(1) {
+.social-icons li:nth-child(1) {
     background-color: #7289DA;
-  }
+}
   
-  .social-icons li:nth-child(2) {
+.social-icons li:nth-child(2) {
     background-color: #171515;
-  }
+}
   
-  .social-icons li:nth-child(3) {
+.social-icons li:nth-child(3) {
     background-color: #FF0000;
-  }
+}
   
-  .social-icons li:nth-child(4) {
+.social-icons li:nth-child(4) {
     background-color: #fff;
     a {
       color: #f86434;
     }
-  }
+}
   
-  .social-icons li:nth-child(5) {
+.social-icons li:nth-child(5) {
     background-color: #FF4500;
-  }
+}
