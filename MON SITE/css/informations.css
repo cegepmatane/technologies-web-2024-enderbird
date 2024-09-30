@@ -1,1 +1,53 @@
 @import url(general.css);
+
+.les-articles {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.article {
+    display: flex;
+    padding: 16px;
+    margin: 8px 16px;
+    background-color: #f0f8ff;
+    /* border: 4px solid rgb(246, 255, 0);    boite de chaque article au complet*/
+}
+
+.flex-row {
+    background-color: #78c0ff;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex: 1;
+}
+
+.flex-column {
+    background-color: #ff9696;
+    display: flex;
+    flex-direction: column;
+    flex: 1 400%;
+}
+
+.image {
+    border: 4px solid black;
+    width: 100%;
+}
+
+.container-titre {
+    background-color: rgb(209, 111, 255);
+    flex: 1;
+}
+
+p {
+    font-family: "ProFontWindowsRegular";
+    font-size: 1.2em;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 10px;
+}
+
+.bouton {
+    background-color: beige;
+    flex: 1;
+}

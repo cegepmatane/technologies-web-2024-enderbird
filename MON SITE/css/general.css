@@ -38,12 +38,13 @@ nav {
 
 nav ul {
     list-style-type: none; /* ENLEVER PUCES */
+    display: flex;
 }
 
 nav li {
-    float: left;
-    width: 14.28571%;
-    position: static;
+    /* float: left; */
+    flex-grow: 1;
+    position: relative;
     background-color: rgba(44, 28, 97, 0.884);
     text-align: center;
 }
@@ -130,7 +131,7 @@ i {
 /* FOOTER (BAS DE PAGE COPYRIGHT */
 
 .container {
-    height: 100vh;
+    height: 120vh;
 }
 
 
@@ -190,26 +191,29 @@ footer {
     0% {
         transform: none;
         box-shadow: none;
-        filter: none;
     }
     25%{
         transition: transform ease-in-out;
-        transform: scale(0.95);
-        filter: blur(2px);
+        transform: scale(0.8);
     }
     50% {
-        filter: hue-rotate(-40deg);
         box-shadow: none;
-        transform: translateY(0);
+        transform: scale(1.1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    80% {
+        transform: translateY(none);
     }
 }
   
 .social-icons li:hover {
     /* animation: icon-animation 2s ease-in-out infinite; */
-    animation: icon-animation 2s;
-    transform: translateY(-5px) scale(1.05);
+    animation: icon-animation 1s;
+    transform: translateY(-5px);
 
-    box-shadow: 0 5px 3px rgb(231, 198, 255);
+    box-shadow: 0 5px 0px rgb(231, 198, 255);
 }
   
 .social-icons li a {

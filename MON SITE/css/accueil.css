@@ -10,6 +10,32 @@ h1 {
 .container {
   width: 100%;
   margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.container-text {
+  background: rgba(175, 159, 255, 0.89);
+  border: 5px solid black;
+  margin: 10px;
+}
+
+.flex-container-fixing {
+  margin: 10px;
+  align-items: none;
+  flex: 0 50%;
 }
 
 p {
@@ -20,32 +46,26 @@ p {
   text-justify: inter-word;
   margin: 10px;
 }
-.container-text {
-  background: rgba(175, 159, 255, 0.89);
-  border: 5px solid black;
-  width: 48%;
-  /* width   dépends de comment placé */
-  /* Top Right Bottom Left */
+
+.container-image {
+  border: 4px solid black;
+  transition: transform 2s ease-out; /* Animation */
+  align-items: stretch;
+  width: 100%;
+}
+
+.image1 {
   margin: 10px;
 }
 
-.container-image1 {
-  border: 5px solid rgb(0, 0, 0);
-  margin: 0px 10px 0px 10px;
-  transition: transform 2s ease-out; /* Animation */
-}
-.container-image2 {
-  border: 5px solid rgb(0, 0, 0);
-  width: 48%;
-  float: right;
-  margin: 10px;
-  transition: transform 2s ease-out; /* Animation */
+.image2 {
+  margin: 10px 0 10px 0;
 }
 
-.container-image1:hover  {
+.image1:hover  {
   transform: scale(0.9) rotate(0.01turn);
 }
-.container-image2:hover {
+.image2:hover {
   transform: scale(0.9) rotate(-0.004turn);
 }
 
