@@ -1,14 +1,12 @@
 @import url(general.css);
 
 h1 {
-    font-family: "MinecraftFontBold";
-    font-size: 2.5em;
-    text-align: center;
-    letter-spacing: 10px;
+    color: white;
+    text-shadow: 0 3px 3px rgb(208, 38, 255), -2px -2px 4px rgb(22, 0, 39);
   }
 h2 {
-    font-family: "MinecraftFontBold";
-    text-align: center;
+    color: white;
+    text-shadow: 0 3px 3px rgb(208, 38, 255), -2px -2px 4px rgb(22, 0, 39);
 }
   
 table {

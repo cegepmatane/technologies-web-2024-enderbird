@@ -1,53 +1,93 @@
 @import url(general.css);
-
 .les-articles {
     display: inline-flex;
     flex-direction: column;
     align-items: stretch;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .article {
+    flex-grow: 1;
+    flex-basis: 100%;
     display: flex;
-    padding: 16px;
     margin: 8px 16px;
-    background-color: #f0f8ff;
+    background-color: #ecf6ff;
     /* border: 4px solid rgb(246, 255, 0);    boite de chaque article au complet*/
 }
 
 .flex-row {
-    background-color: #78c0ff;
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    flex: 1;
 }
 
 .flex-column {
-    background-color: #ff9696;
+    margin: 16px;
     display: flex;
     flex-direction: column;
-    flex: 1 400%;
+    flex: 1 60%;
+    justify-content: space-between;
+}
+
+.container-image {
+    flex: 1;
+    margin: 16px 0 16px 16px;
+    border: 4px solid rgb(76, 60, 156);;
+    align-items: stretch;
 }
 
 .image {
-    border: 4px solid black;
+    height: 100%;
     width: 100%;
 }
 
-.container-titre {
-    background-color: rgb(209, 111, 255);
-    flex: 1;
-}
-
 p {
+    background-color: rgba(212, 203, 255, 0.89);
     font-family: "ProFontWindowsRegular";
     font-size: 1.2em;
     text-align: justify;
     text-justify: inter-word;
-    margin: 10px;
+    padding: 16px;
+    flex-grow: 1;
+    margin-bottom: 16px;
+}
+
+.container-text-custom {
+    font-family: "MinecraftFontRegular", sans-serif;
+    flex-grow: 10;
+    border: 4px solid #ab7ce5;
+    background-color: #8842DE;
+    color: #fff;
+    padding: 16px 16px 16px 48px;
+    letter-spacing: 4px;
+    font-size: 1.3em;
+    text-shadow: 0 3px 3px rgb(208, 38, 255), -2px -2px 6px rgb(208, 158, 246);
 }
 
 .bouton {
-    background-color: beige;
-    flex: 1;
+    width: 30%;
+    margin-left: 16px;
+    font-family: "MinecraftFontRegular", sans-serif;
+    border: 4px solid rgb(136, 66, 222);
+    a {
+        font-size: 0.9em;
+        letter-spacing: 2px;
+        background-color: rgb(88, 32, 157);
+        height: 100%;
+        padding: 16px;
+        display: block;
+        color: #ffffff;
+        text-shadow: -1px -1px 3px rgb(252, 172, 255), 1px 1px 3px rgb(247, 175, 255);
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+.bouton a:hover {
+    border: 5px solid rgb(255, 220, 207);
+    background-color: rgb(255, 250, 246);
+    padding: 11px;
+    color: black;
+    box-shadow: 0 0 70px rgb(255, 221, 0);
 }

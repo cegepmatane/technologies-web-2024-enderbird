@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/espace-membre.css">
+
+    <script src="js/validation-espace-membre.js" defer></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -44,10 +47,6 @@
             </li>
             
             <li>
-              <a href="faq.html"><i class="fa-solid fa-clipboard-question"></i> FAQ</a>
-            </li>
-  
-            <li>
               <a href="mise-a-jour.html"><i class="fa-regular fa-star"></i> Mise à jour</a>
             </li>
           </ul>
@@ -60,29 +59,24 @@
     </div>
 
     <div class="container">
-        <form action="traitement.html" method="post">
+        <form action="traitement.html" method="post" id="formulaire">
             <fieldset>
-              <div class="input-container">
+              <div id="pseudoLabel">
                 <label for="pseudo">Pseudonyme :</label>
-              
-                  <input type="text" class="pseudo" name="pseudo" id="pseudo" placeholder="Entrez votre nom d'utilisateur" autofocus>
+                <input type="text" name="pseudo" id="pseudo">
+                <span id="erreurPseudo" class="erreur"></span>
               </div>
             </fieldset>
-            
+
             <fieldset>
-             
-                
-              <div class="input-container">
+              <div id="passwordLabel">
                   <label for="password">Mot de passe :</label>
-                  <input type="password" class="password" name="password" id="password" placeholder="Entrez votre mot de passe">
+                  <input type="password" name="password" id="password">
+                  <span id="erreurPassword" class="erreur"></span>
               </div>           
               
-              <div class="input-container">
-                <input type="submit" class="submit" value="Connection">
-              </div>
+              <input type="submit" class="submit" value="Connection">
             </fieldset>
-
-
         </form>
     </div>
 </body>

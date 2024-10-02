@@ -1,10 +1,11 @@
 /* Pour utiliser general.css quand ce fichier est utilisé*/
 @import url(general.css);
 
-h1 {
-  font-family: "MinecraftFontBold";
-  font-size: 2.5em;
-  text-align: center;
+.titre-header {
+  h1 {
+    color: white;
+    text-shadow: 0 3px 3px rgb(208, 38, 255), -2px -2px 4px rgb(22, 0, 39);
+  } 
 }
 
 .container {
@@ -27,8 +28,9 @@ h1 {
 }
 
 .container-text {
-  background: rgba(175, 159, 255, 0.89);
-  border: 5px solid black;
+  background: #D7D0FF;
+  padding: 16px;
+  border: 16px solid #ECF6FF;
   margin: 10px;
 }
 
@@ -47,19 +49,31 @@ p {
   margin: 10px;
 }
 
-.container-image {
-  border: 4px solid black;
-  transition: transform 2s ease-out; /* Animation */
+.container-image-1 {
+  padding: 16px;
+  background-color: #ECF6FF;
+  flex: 2;
+}
+
+.container-image-2 {
+  padding: 16px;
+  background-color: #ECF6FF;;
   align-items: stretch;
-  width: 100%;
+  margin: 10px 0 10px 0;
 }
 
 .image1 {
-  margin: 10px;
+  height: 100%;
+  border: 4px solid #4C3C9C;
+  width: 100%;
+  transition: transform 2s ease-out; /* Animation */
 }
 
 .image2 {
-  margin: 10px 0 10px 0;
+  height: 100%;
+  border: 4px solid #4C3C9C;
+  width: 100%;
+  transition: transform 2s ease-out; /* Animation */
 }
 
 .image1:hover  {
