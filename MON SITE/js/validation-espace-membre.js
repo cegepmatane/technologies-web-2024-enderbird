@@ -10,7 +10,7 @@ const passwordLabel = document.querySelector("#passwordLabel");
 document.querySelector("#formulaire").addEventListener("submit", valider, true);
 
 function valider(e) {
-    if (pseudo.value == "") {
+    if (pseudo.value == 0) {
         e.preventDefault();
         erreurPseudo.textContent = "Votre pseudo ?!?";
         pseudo.className = "invalide";
@@ -19,7 +19,7 @@ function valider(e) {
         return false;
     }
 
-    if (password.value == "") {
+    if (password.value == 0) {
         e.preventDefault();
         erreurPassword.textContent = "Entrez votre mot de passe";
         password.className = "invalide";
@@ -32,7 +32,7 @@ function valider(e) {
 pseudo.addEventListener("blur", verifierPseudo, true);
 
 function verifierPseudo() {
-    if (pseudo.value != "") {
+    if (pseudo.value != 0) {
         pseudo.className = "valide";
         pseudoLabel.className = "labelNice";
         erreurPseudo.textContent = "";
@@ -44,7 +44,7 @@ function verifierPseudo() {
 password.addEventListener("blur", verifierPassword, true);
 
 function verifierPassword() {
-    if (password.value != "") {
+    if (password.value != 0) {
         password.className = "valide";
         passwordLabel.className = "labelNice";
         erreurPassword.textContent = "";

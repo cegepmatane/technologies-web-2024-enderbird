@@ -15,14 +15,24 @@ document.querySelector("#formulaire").addEventListener("submit", valider, true);
 // focus et les erreures
 
 function valider(e) {
-    if (email.value == "") {
-        e.preventDefault();
-        erreurEmail.textContent = "Veuillez entrer votre email";
+    // regexEmail
+    let regexEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+
+    if ((regexEmail.test(email.value)) == false || email.value == "exemple123@hotmail.com") {
+        e.preventDefault()
+        if ((regexEmail.test(email.value)) == false) {
+            erreurEmail.textContent = "Mauvais format pour l'email";
+        }
+        if (email.value == 0 || email.value == "exemple123@hotmail.com") {
+            erreurEmail.textContent = "Entrez votre email"
+        }
+        
         email.className = "invalide";
         emailLabel.className = "label";
         email.focus();
         return false;
     }
+    // Fin regexEmail & general Email settings
 
     if (selector.value == "Autre") {
         e.preventDefault();
@@ -33,7 +43,7 @@ function valider(e) {
         return false;
     }
 
-    if (textArea.value == "") {
+    if (textArea.value == 0) {
         e.preventDefault();
         erreurTextArea.textContent = "Veuillez décrire la raison !";
         textArea.className = "invalide";
@@ -48,7 +58,8 @@ function valider(e) {
 email.addEventListener("blur", verifierEmail, true);
 
 function verifierEmail() {
-    if (email.value != "") {
+    let regexEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    if ((regexEmail.test(email.value)) == true) {
         email.className = "valide";
         emailLabel.className = "labelNice";
         erreurEmail.textContent = "";
@@ -72,7 +83,7 @@ function verifierSelector() {
 textArea.addEventListener("blur", verifierTextArea, true);
 
 function verifierTextArea() {
-    if (textArea.value != "") {
+    if (textArea.value != 0) {
         textArea.className = "valide";
         textAreaLabel.className = "labelNice";
         erreurTextArea.textContent = "";

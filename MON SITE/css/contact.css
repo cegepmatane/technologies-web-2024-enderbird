@@ -35,7 +35,7 @@ fieldset {
     margin: 1em;
 }
 
-input[type="email"], select, textarea, input[type="submit"] {
+input[type="text"], select, textarea, input[type="submit"] {
     font-family: "MinecraftFontRegular";
     font-size: 0.8em;
     padding: 10px;
@@ -43,15 +43,15 @@ input[type="email"], select, textarea, input[type="submit"] {
     background-color: #ffffffbd;
 }
 
-input[type="email"]:hover, select:hover, textarea:hover {
+input[type="text"]:hover, select:hover, textarea:hover {
     background-color: rgb(255, 255, 255);
 }
 
-input[type="email"]:focus, select:focus, textarea:focus, input[type="submit"]:focus {
+input[type="text"]:focus, select:focus, textarea:focus, input[type="submit"]:focus {
     outline: 4px solid black;
 }
 
-input[type="email"] {
+input[type="text"] {
     width: 70%;
 }
 
@@ -86,6 +86,7 @@ input[type="submit"]:hover {
     outline: none;
   }
   
+/* POUR LE FORM EN JAVASCRIPT */
 .erreur {
     color: magenta;
 }
@@ -105,6 +106,8 @@ input[type="submit"]:hover {
 .labelNice {
   color: #00ff00;
 }
+
+
 
 /* interresting */
 @media screen and (max-width:500px) {

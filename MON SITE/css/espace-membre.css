@@ -82,6 +82,27 @@ input[type="submit"]:hover {
     box-shadow: rgb(255, 224, 51) 0px 30px 90px 20px;
 }
 
+/* POUR LE FORM EN JAVASCRIPT */
+.erreur {
+    color: magenta;
+}
+
+.invalide {
+    border: 2px solid #ff0000 !important;
+    background-color: #ffffff !important;
+}
+.valide {
+    border: 2px solid #00ff00 !important;
+     background-color: #ffffff !important;
+}
+
+.label {
+    color: #ff0000;
+}
+.labelNice {
+  color: #00ff00;
+}
+
 
 /* interresting */
 @media screen and (max-width:500px) {
