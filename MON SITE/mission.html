@@ -6,6 +6,9 @@
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/mission.css">
     <!-- toujours mettre icon fontawesome link à après -->
+     
+    <script src="js/annee.js" defer></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -25,10 +28,10 @@
           <li>
             <a href="informations.html" class="text-color"><i class="fa-solid fa-circle-info"></i> Informations</a>
             <ul>
-              <li><a href="sous-info1.html">1</a></li>
-              <li><a href="sous-info2.html">2</a></li>
-              <li><a href="sous-info3.html">3</a></li>
-              <li><a href="sous-info4.html">4</a></li>
+              <li><a href="sous-info1.html">Règles</a></li>
+              <li><a href="sous-info2.html">Album photo</a></li>
+              <li><a href="sous-info3.html">Pourquoi ?</a></li>
+              <li><a href="sous-info4.html">FAQ</a></li>
             </ul>
           </li>
 
@@ -49,120 +52,135 @@
           </li>
         </ul>
       </nav>
+      
+      <img src="images/headerAccueilImage.png" class="header" alt="header-image">
     </header>
-    <img src="images/headerAccueilImage.png" class="header" alt="header-image">
 
-    <div class="titre-header"><h1>Mission</h1><h2>(idk)</h2></div>
+    <div class="container">
+      <div class="titre-header"><h1>Mission <p>(idk)</p></h1></div>
 
-    <div class="container-table">
-      <table>
-        <caption>Progrès</caption>
-        <thead>
-          <tr>
-            <th>:)</th>
-            <th>Statistique</th>
-            <th>Rank</th>
-            <th colspan="2">Joueur / Surnom</th>
-            <th>Temps de jeu</th>
-            <th>Nombre de fois</th>
-          </tr>
-        </thead>
-        
-        <tbody>
+      <div class="container-table">
+        <table>
+          <caption>Progrès</caption>
+          <thead>
+            <tr>
+              <th><!-- empty --></th>
+              <th>Statistique</th>
+              <th>Rank</th>
+              <th colspan="2">Joueur / Surnom</th>
+              <th>Temps de jeu</th>
+              <th>Nombre de fois</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <!-- NOMBRE DE MORTS -->
+            <tr class="stat-admin">
+              <th rowspan="12">Entités</th><!-- JE NE SAIS PAS ENTITÉ -->
+              <td rowspan="6" class="stat">Nombre de morts</td>
+              <td>Admin</td>
+              <td>Ender_Bird_</td>
+              <td>Ced</td>
+              <td>14d 34min</td>
+              <td>1240</td>
+            </tr>
+            <tr class="stat-membre">
+              <td>Membre</td>
+              <td>ExtantMoss15108</td>
+              <td>Le petit Julien</td>
+              <td>3d 10min</td>
+              <td>234</td>
+            </tr>
+            <tr class="stat-admin">
+              <td>Admin</td>
+              <td>7137O5</td>
+              <td>Null</td>
+              <td>4d 03min</td>
+              <td>230</td>
+            </tr>
+            <tr class="stat-membre">
+              <td>Membre</td>
+              <td>Victor1381d</td>
+              <td>Vicktaure</td>
+              <td>4d 56min</td>
+              <td>204</td>
+            </tr>
+            <tr class="stat-membre">
+              <td>Membre</td>
+              <td>ieatplastichehe</td>
+              <td>THE(goat)DEER</td>
+              <td>2d 14min</td>
+              <td>70</td>
+            </tr>
+            <tr class="stat-membre">
+              <td>Membre</td>
+              <td>dekoi_g_pa_dide_</td>
+              <td>Jé</td>
+              <td>4d 03min</td>
+              <td>64</td>
+            </tr>
           
-          <!-- NOMBRE DE MORTS -->
-          <tr class="stat-admin">
-            <th rowspan="12">Entités</th><!-- JE NE SAIS PAS ENTITÉ -->
-            <td rowspan="6" class="stat">Nombre de morts</td>
-            <td>Admin</td>
-            <td>Ender_Bird_</td>
-            <td>Ced</td>
-            <td>14d 34min</td>
-            <td>1240</td>
-          </tr>
-          <tr class="stat-membre">
-            <td>Membre</td>
-            <td>ExtantMoss15108</td>
-            <td>Le petit Julien</td>
-            <td>3d 10min</td>
-            <td>234</td>
-          </tr>
-          <tr class="stat-admin">
-            <td>Admin</td>
-            <td>7137O5</td>
-            <td>Null</td>
-            <td>4d 03min</td>
-            <td>230</td>
-          </tr>
-          <tr class="stat-membre">
-            <td>Membre</td>
-            <td>Victor1381d</td>
-            <td>Vicktaure</td>
-            <td>4d 56min</td>
-            <td>204</td>
-          </tr>
-          <tr class="stat-membre">
-            <td>Membre</td>
-            <td>ieatplastichehe</td>
-            <td>THE(goat)DEER</td>
-            <td>2d 14min</td>
-            <td>70</td>
-          </tr>
-          <tr class="stat-membre">
-            <td>Membre</td>
-            <td>dekoi_g_pa_dide_</td>
-            <td>Jé</td>
-            <td>4d 03min</td>
-            <td>64</td>
-          </tr>
-    
-          <!-- JOUEURS TUÉS -->
-          <tr class="stat-admin">
-            <td rowspan="6" class="stat">Joueurs tués</td>
-            <td>Admin</td>
-            <td>Ender_Bird_</td>
-            <td>Ced</td>
-            <td>14d 34min</td>
-            <td>1240</td>
-          </tr>
-          <tr class="stat-membre">
-            <td>Membre</td>
-            <td>ExtantMoss15108</td>
-            <td>Le petit Julien</td>
-            <td>3d 10min</td>
-            <td>234</td>
-          </tr>
-          <tr class="stat-admin">
-            <td>Admin</td>
-            <td>7137O5</td>
-            <td>Null</td>
-            <td>4d 03min</td>
-            <td>230</td>
-          </tr>
-          <tr class="stat-membre">
-            <td>Membre</td>
-            <td>Victor1381d</td>
-            <td>Vicktaure</td>
-            <td>4d 56min</td>
-            <td>204</td>
-          </tr>
-          <tr class="stat-membre">
-            <td>Membre</td>
-            <td>ieatplastichehe</td>
-            <td>THE(goat)DEER</td>
-            <td>2d 14min</td>
-            <td>70</td>
-          </tr>
-          <tr class="stat-membre">
-            <td>Membre</td>
-            <td>dekoi_g_pa_dide_</td>
-            <td>Jé</td>
-            <td>4d 03min</td>
-            <td>64</td>
-          </tr>
-        </tbody>
-      </table>
+            <!-- JOUEURS TUÉS -->
+            <tr class="stat-admin">
+              <td rowspan="6" class="stat">Joueurs tués</td>
+              <td>Admin</td>
+              <td>Ender_Bird_</td>
+              <td>Ced</td>
+              <td>14d 34min</td>
+              <td>1240</td>
+            </tr>
+            <tr class="stat-membre">
+              <td>Membre</td>
+              <td>ExtantMoss15108</td>
+              <td>Le petit Julien</td>
+              <td>3d 10min</td>
+              <td>234</td>
+            </tr>
+            <tr class="stat-admin">
+              <td>Admin</td>
+              <td>7137O5</td>
+              <td>Null</td>
+              <td>4d 03min</td>
+              <td>230</td>
+            </tr>
+            <tr class="stat-membre">
+              <td>Membre</td>
+              <td>Victor1381d</td>
+              <td>Vicktaure</td>
+              <td>4d 56min</td>
+              <td>204</td>
+            </tr>
+            <tr class="stat-membre">
+              <td>Membre</td>
+              <td>ieatplastichehe</td>
+              <td>THE(goat)DEER</td>
+              <td>2d 14min</td>
+              <td>70</td>
+            </tr>
+            <tr class="stat-membre">
+              <td>Membre</td>
+              <td>dekoi_g_pa_dide_</td>
+              <td>Jé</td>
+              <td>4d 03min</td>
+              <td>64</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>    
 
-    </body>
+      <!-- footering -->
+
+    <footer>
+      <div class="copyright">Copyright &copy; <span id="annee"></span> cender</div>
+      <ul class="social-icons">
+        <li><a href="https://discord.gg"><i class="fa-brands fa-discord"></i></a></li>
+        <li><a href="https://github.com/enderbird"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://www.curseforge.com"><i class="fa-solid fa-weight-hanging"></i></a></li>
+        <li><a href="https://www.reddit.com"><i class="fa-brands fa-reddit"></i></a></li>
+      </ul>
+    </footer>
+  </body>
 </html>

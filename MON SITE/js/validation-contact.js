@@ -10,6 +10,9 @@ const emailLabel = document.querySelector("#emailLabel");
 const selectorLabel = document.querySelector("#reasonLabel");
 const textAreaLabel = document.querySelector("#textAreaLabel");
 
+// Pour afficher une textArea quand "Autre" est sélectionné
+const selectorPourquoi = document.querySelector("#reasoning")
+
 document.querySelector("#formulaire").addEventListener("submit", valider, true);
 
 // focus et les erreures
@@ -20,11 +23,12 @@ function valider(e) {
 
     if ((regexEmail.test(email.value)) == false || email.value == "exemple123@hotmail.com") {
         e.preventDefault()
+        erreurEmail.className = "erreur"
         if ((regexEmail.test(email.value)) == false) {
             erreurEmail.textContent = "Mauvais format pour l'email";
         }
         if (email.value == 0 || email.value == "exemple123@hotmail.com") {
-            erreurEmail.textContent = "Entrez votre email"
+            erreurEmail.textContent = "Entrez votre email !";
         }
         
         email.className = "invalide";
@@ -34,12 +38,27 @@ function valider(e) {
     }
     // Fin regexEmail & general Email settings
 
-    if (selector.value == "Autre") {
+    if (selector.value == "Pas de valeur") {
         e.preventDefault();
         erreurSelecteur.textContent = "Veuillez spécifier la raison";
         selector.className = "invalide";
         selectorLabel.className = "label";
         selector.focus();
+        return false;
+    }
+
+    // Si la case est le bouton "Autre"
+    if (selector.value != "Autre raison") {
+        selectorPourquoi.value = "";
+        selectorPourquoi.className = "selectorAutreNo";
+    }
+    
+    // pour afficher une textarea qui demande de spécifier quand "Autre" est sélectionné
+    if (selector.value == "Autre raison" && selectorPourquoi.value == 0) {
+        e.preventDefault();
+        erreurSelecteur.textContent = "Veuillez spécifier la raison";
+        selectorPourquoi.className = "invalide";
+        selectorPourquoi.focus();
         return false;
     }
 
@@ -62,6 +81,7 @@ function verifierEmail() {
     if ((regexEmail.test(email.value)) == true) {
         email.className = "valide";
         emailLabel.className = "labelNice";
+        erreurEmail.className = "labelNice";
         erreurEmail.textContent = "";
         selector.focus();
         return true;
@@ -71,8 +91,32 @@ function verifierEmail() {
 selector.addEventListener("blur", verifierSelector, true);
 
 function verifierSelector() {
-    if (selector.value != "Autre") {
+    if (selector.value != "Pas de valeur" && selector.value != "Autre raison") {
         selector.className = "valide";
+        selectorLabel.className = "labelNice";
+        selectorPourquoi.className = "selectorAutreNo";
+        erreurSelecteur.textContent = "";
+        textArea.focus();
+        return true;
+    }
+}
+
+selector.addEventListener("blur", verifierSelectorAutreRaison, true);
+
+function verifierSelectorAutreRaison() {
+    // pour afficher une textarea qui demande de spécifier quand "Autre" est sélectionné
+    if (selector.value == "Autre raison") {
+        selector.className = "valide";
+        selectorPourquoi.className = "selectorAutreYes invalide";
+        selectorPourquoi.focus();
+        return true;
+    } 
+}
+selectorPourquoi.addEventListener("blur", verifierSelectorPourquoi, true);
+
+function verifierSelectorPourquoi() {
+    if (selectorPourquoi.value != 0) {
+        selectorPourquoi.className = "valide";
         selectorLabel.className = "labelNice";
         erreurSelecteur.textContent = "";
         textArea.focus();

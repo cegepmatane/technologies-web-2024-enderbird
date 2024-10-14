@@ -2,15 +2,132 @@
 @import url(general.css);
 
 .titre-header {
-  h1 {
-    color: white;
-    text-shadow: 0 3px 3px rgb(208, 38, 255), -2px -2px 4px rgb(22, 0, 39);
-  } 
+  width: 51.5%;
 }
 
 .container {
+  display: flex;
+}
+
+.container-left, .container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  width: 70em;
+  background-image: url("../images/Deepslate-Bricks-Block.png");
+  background-size: 5%;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* regarder le footer dans le css general, ça explique le -10em */
+  margin: -4px 0px -10em 0px; 
+  box-shadow: 0px 0px 12px rgb(248, 233, 255);
+}
+.container-left-top {
   width: 100%;
-  margin: 0;
+  background-size: 40%;
+  
+  padding: 1.5em 0;
+  margin-bottom: 30%;
+  height: 15%;
+
+  box-shadow: rgb(188, 246, 255) 0px 0px 10px 4px;
+  border: 4px solid #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  
+  p {
+    color: white;
+    font-family: "MinecraftFontBold";
+    text-shadow: -1px -1px 4px rgb(0, 0, 0), 1px 1px 4px rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+.container-left-top:nth-child(1) {
+  background-image: url("../images/Blue-Wool-Block.jpg");
+}
+.container-left-top:nth-child(2) {
+  background-image: url("../images/Geen-Wool-Block.jpg");
+}
+.container-left-top:nth-child(3) {
+  background-image: url("../images/Pink-Wool-Block.jpg");
+}
+.container-left-top:nth-child(4) {
+  background-image: url("../images/Red-Wool-Block.jpg");
+}
+
+#decompte1, #decompte2, #decompte3, #decompte4 {
+  text-align: center;
+  font-family: "MinecraftFontBold";
+  text-shadow: 0px 0px 4px white;
+  font-size: 1.6em;
+  width: auto;
+  margin: auto 16px;
+  box-shadow: 0px 0px 8px rgb(204, 0, 255);
+  background-color: rgba(223, 96, 255, 0.229);
+}
+
+.container-right-top {
+  width: 100%;
+  background-image: url("../images/Deepslate-Bricks-Block.png");
+  background-size: 40%;
+  
+  padding: 1em 0;
+  margin-bottom: 40%;
+  height: auto;
+  justify-content: space-around;
+
+  box-shadow: rgb(188, 246, 255) 0px 0px 10px 4px;
+  border: 4px solid #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  p {
+    color: white;
+    font-family: "MinecraftFontRegular";
+    font-size: 0.9em;
+    text-shadow: 0px 0px 2px rgb(26, 0, 27);
+    line-height: 140%;
+
+    box-shadow: 0px 0px 10px rgb(90, 0, 93);
+    background-color: rgba(142, 0, 163, 0.681);
+    padding: 16px;
+    margin-bottom: 2em;
+  }
+
+  a {
+    font-family: "MinecraftFontBold";
+    width: 80%;
+    padding: 8px;
+    background-color: #2C1C61;
+    color: rgb(255, 255, 255);
+    transition: transform 1s; /* Animation */
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.8em;
+    box-shadow: 0px 0px 12px black;
+  }
+  a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.01);
+    box-shadow: rgb(255, 228, 76) 0px 0px 40px 5px;
+  }
+}
+.container-right-top:nth-child(1) {
+  background-image: url("../images/Yellow-Wool-Block.jpg");
+}
+.container-right-top:nth-child(2) {
+  background-image: url("../images/Cyan-Wool-Block.png");
+}
+
+/* container au centre */
+.container-center {
   display: inline-flex;
   flex-direction: column;
   align-items: stretch;
@@ -29,13 +146,14 @@
 
 .container-text {
   background: #D7D0FF;
-  padding: 16px;
+  padding: 8px;
   border: 16px solid #ECF6FF;
-  margin: 10px;
+  margin: 4px;
+  box-shadow: 0px 0px 12px black;
 }
 
 .flex-container-fixing {
-  margin: 10px;
+  margin: 8px;
   align-items: none;
   flex: 0 50%;
 }
@@ -46,11 +164,13 @@ p {
   text-align: justify;
   /* text-justify: inter-word; PAS SUR SI ÇA FAIT UN DIFFÉRENCE*/
   text-justify: inter-word;
-  margin: 10px;
+  margin: 4px;
+  line-height: 120%;
 }
 
 .container-image-1 {
   padding: 16px;
+  margin-left: 4px;
   background-color: #ECF6FF;
   flex: 2;
 }
@@ -59,7 +179,7 @@ p {
   padding: 16px;
   background-color: #ECF6FF;;
   align-items: stretch;
-  margin: 10px 0 10px 0;
+  margin: 16px 0 16px 0;
 }
 
 .image1 {
@@ -77,12 +197,8 @@ p {
 }
 
 .image1:hover  {
-  transform: scale(0.9) rotate(0.01turn);
+  transform: scale(0.97) rotate(0.003turn);
 }
 .image2:hover {
-  transform: scale(0.9) rotate(-0.004turn);
-}
-
-.creeper-image {
-  width: 5%;
+  transform: scale(0.97) rotate(-0.001turn);
 }

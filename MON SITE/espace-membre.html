@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/espace-membre.css">
-
+    
+    <script src="js/annee.js" defer></script>
     <script src="js/validation-espace-membre.js" defer></script>
 
     <link
@@ -27,10 +28,10 @@
             <li>
               <a href="informations.html" class="text-color"><i class="fa-solid fa-circle-info"></i> Informations</a>
               <ul>
-                <li><a href="sous-info1.html">1</a></li>
-                <li><a href="sous-info2.html">2</a></li>
-                <li><a href="sous-info3.html">3</a></li>
-                <li><a href="sous-info4.html">4</a></li>
+                <li><a href="sous-info1.html">Règles</a></li>
+                <li><a href="sous-info2.html">Album photo</a></li>
+                <li><a href="sous-info3.html">Pourquoi ?</a></li>
+                <li><a href="sous-info4.html">FAQ</a></li>
               </ul>
             </li>
   
@@ -51,9 +52,10 @@
             </li>
           </ul>
         </nav>
+        
+        <img src="images/headerAccueilImage.png" class="header" alt="header-image">
     </header>
-    <img src="images/headerAccueilImage.png" class="header" alt="header-image">
-
+    
     <div class="titre-header">
       <h1>Espace membre</h1>
     </div>
@@ -69,15 +71,34 @@
             </fieldset>
 
             <fieldset>
-              <div id="passwordLabel">
-                  <label for="password">Mot de passe :</label>
-                  <input type="password" name="password" id="password">
-                  <span id="erreurPassword" class="erreur"></span>
-              </div>           
-              
-              <input type="submit" class="submit" value="Connection">
+              <div id="password1Label">
+                  <label for="password1">Mot de passe :</label>
+                  <input type="password" name="password" id="password1">
+                  <span id="erreurPassword1" class="erreur"></span>
+              </div>
+
+              <div id="password2Label">
+                <label for="password2">Répéter le mot de passe :</label>
+                <input type="password" name="password" id="password2">
+                <span id="erreurPassword2" class="erreur"></span>
+              </div>
+
+              <input type="submit" class="submit" value="Se connecter">
             </fieldset>
         </form>
     </div>
+    
+    <!-- footering -->
+
+    <footer>
+      <div class="copyright">Copyright &copy; <span id="annee"></span> cender</div>
+      <ul class="social-icons">
+        <li><a href="https://discord.gg"><i class="fa-brands fa-discord"></i></a></li>
+        <li><a href="https://github.com/enderbird"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://www.curseforge.com"><i class="fa-solid fa-weight-hanging"></i></a></li>
+        <li><a href="https://www.reddit.com"><i class="fa-brands fa-reddit"></i></a></li>
+      </ul>
+    </footer>
 </body>
 </html>

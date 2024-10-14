@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/informations.css">
+    <script src="js/annee.js" defer></script>
+    <script src="js/decompte.js" defer></script>
+
     <!-- toujours mettre icon fontawesome link à après -->
     <link
       rel="stylesheet"
@@ -25,10 +28,10 @@
           <li>
             <a href="informations.html" class="text-color actif"><i class="fa-solid fa-circle-info"></i> Informations</a>
             <ul>
-              <li><a href="sous-info1.html">1</a></li>
-              <li><a href="sous-info2.html">2</a></li>
-              <li><a href="sous-info3.html">3</a></li>
-              <li><a href="sous-info4.html">4</a></li>
+              <li><a href="sous-info1.html">Règles</a></li>
+              <li><a href="sous-info2.html">Album photo</a></li>
+              <li><a href="sous-info3.html">Pourquoi ?</a></li>
+              <li><a href="sous-info4.html">FAQ</a></li>
             </ul>
           </li>
 
@@ -49,14 +52,18 @@
           </li>
         </ul>
       </nav>
+      
+      <img src="images/headerAccueilImage.png" class="header" alt="header-image">
     </header>
-    <img src="images/headerAccueilImage.png" class="header" alt="header-image">
 
     <div class="container">
-      <div class="les-articles">
-        <div class="article">
+
+      <div id="compteur-articles" class="titre-header"></div>
+
+      <section class="les-articles">
+        <article class="article">
           <div class="flex-row">
-            <a class="container-image" href=""><img src="images/2022-12-31_22.42.48.png" class="image" alt="idk"></a>
+            <div class="container-image"><img src="images/Server-Info.png" class="image" alt="idk"></div>
 
             <div class="flex-column">
               <p>
@@ -64,15 +71,15 @@
               </p>
 
               <div class="flex-row">
-                <div class="container-text-custom"> Règles et informations</div>
+                <div class="container-text-custom"> Règles (et informations)</div>
                 <div class="bouton"><a href="sous-info1.html">Vers la section . . .</a></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="article">
+        </article>
+        <article class="article">
           <div class="flex-row">
-            <a class="container-image" href=""><img src="images/2022-12-31_22.42.48.png" class="image" alt="idk"></a>
+            <div class="container-image"><img src="images/2022-12-31_22.42.48.png" class="image" alt="idk"></div>
 
             <div class="flex-column">
               <p>
@@ -85,10 +92,10 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="article">
+        </article>
+        <article class="article">
           <div class="flex-row">
-            <a class="container-image" href=""><img src="images/2022-12-31_22.42.48.png" class="image" alt="idk"></a>
+            <div class="container-image"><img src="images/POURQUOI-Info.png" class="image" alt="idk"></div>
 
             <div class="flex-column">
               <p>
@@ -101,10 +108,10 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="article">
+        </article>
+        <article class="article">
           <div class="flex-row">
-            <a class="container-image" href=""><img src="images/2022-12-31_22.42.48.png" class="image" alt="idk"></a>
+            <div class="container-image"><img src="images/FAQ-Info.jpg" class="image" alt="idk"></div>
 
             <div class="flex-column">
               <p>
@@ -117,8 +124,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
     </div>
 
     <!-- footering -->
@@ -126,11 +133,11 @@
     <footer>
       <div class="copyright">Copyright &copy; <span id="annee"></span> cender</div>
       <ul class="social-icons">
-        <li><a href="https://discord.gg/zk3PKhpm3G"><i class="fa-brands fa-discord"></i></a></li>
+        <li><a href="https://discord.gg"><i class="fa-brands fa-discord"></i></a></li>
         <li><a href="https://github.com/enderbird"><i class="fa-brands fa-github"></i></a></li>
-        <li><a href="https://www.youtube.com/@Ender_Bird_"><i class="fa-brands fa-youtube"></i></a></li>
-        <li><a href="https://www.curseforge.com/members/ender_bird__/projects"><i class="fa-solid fa-weight-hanging"></i></a></li>
-        <li><a href="https://www.reddit.com/user/Mysterious-Ebb1314/"><i class="fa-brands fa-reddit"></i></a></li>
+        <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://www.curseforge.com"><i class="fa-solid fa-weight-hanging"></i></a></li>
+        <li><a href="https://www.reddit.com"><i class="fa-brands fa-reddit"></i></a></li>
       </ul>
     </footer>
   </body>

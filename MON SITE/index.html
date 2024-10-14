@@ -8,6 +8,7 @@
 
     <!-- SCRIPTS -->
     <script src="js/annee.js" defer></script>
+    <script src="js/decompte-accueil.js" defer></script>
 
     <!-- toujours mettre icon fontawesome link à après -->
     <link
@@ -29,10 +30,10 @@
           <li>
             <a href="informations.html" class="text-color"><i class="fa-solid fa-circle-info"></i> Informations</a>
             <ul>
-              <li><a href="sous-info1.html">1</a></li>
-              <li><a href="sous-info2.html">2</a></li>
-              <li><a href="sous-info3.html">3</a></li>
-              <li><a href="sous-info4.html">4</a></li>
+              <li><a href="sous-info1.html">Règles</a></li>
+              <li><a href="sous-info2.html">Album photo</a></li>
+              <li><a href="sous-info3.html">Pourquoi ?</a></li>
+              <li><a href="sous-info4.html">FAQ</a></li>
             </ul>
           </li>
 
@@ -53,82 +54,126 @@
           </li>
         </ul>
       </nav>
+      
+      <img src="images/headerAccueilImage.png" class="header" alt="header-image">
     </header>
-    <img src="images/headerAccueilImage.png" class="header" alt="header-image">
-    
-    <div class="titre-header">
-      <h1>☼ Accueil ☼</h1>
-    </div>
-    
+
     <div class="container">
-      <div class="container-text">
-        <p>
-          Bienvenue ! L'idée de faire un site pour un server Minecraft est totalement la mienne.  Je suis la créativité incarnée.  À partir de ce site, vous aurez tout ce que vous aurez besoin pour faire partie de la communauté "Confusion Survival Multiplayer Server" (CSMP ou Confusion SMP).
-         </p>
+      <div class="container-left">
+        <div class="container-left-top">
+          <p>Fin de la session :</p>
+
+          <div id="decompte1"></div>
+        </div>
+
+        <div class="container-left-top">
+          <p>Nouvel an :</p>
+          
+          <div id="decompte2"></div>
+        </div>
+
+        <div class="container-left-top">
+          <p>??? :</p>
+          
+          <div id="decompte3">???</div>
+        </div>
+
+        <div class="container-left-top">
+          <p>??? :</p>
+          
+          <div id="decompte4">???</div>
+        </div>
       </div>
 
-      <div class="flex-row">
-        <div class="container-text flex-container-fixing">
-          <p>
-            Et voici du "bla bla bla", qualifié par "je ne sais pas quoi". :)
-          </p>
+      <div class="container-center">
+        <div class="titre-header">
+          <h1>☼ Accueil ☼</h1>
+        </div>
 
-          <div class="flex-row">
-            <div class="container-image-1">
-              <a href="images/paragrapheAccueilOriginal.png" target="_blank"><img src="images/paragrapheAccueilResized.png" class="image1" alt="paragrapheAccueilOriginal"></a>
+        <div class="container-text">
+          <p>
+            Bienvenue ! L'idée de faire un site pour un server Minecraft est totalement la mienne.  Je suis la créativité incarnée.  À partir de ce   site, vous aurez tout ce que vous aurez besoin pour faire partie de la communauté "Confusion Survival Multiplayer Server" (CSMP ou  Confusion SMP).
+           </p>
+        </div>
+
+        <div class="flex-row">
+          <div class="container-text flex-container-fixing">
+            <p>
+              Et voici du "bla bla bla", qualifié par "je ne sais pas quoi". :)
+            </p>
+
+            <div class="flex-row">
+              <div class="container-image-1">
+                <a href="images/paragrapheAccueilOriginal.png" target="_blank"><img src="images/paragrapheAccueilResized.png" class="image1"  alt="paragrapheAccueilOriginal"></a>
+              </div>
+
+              <div class="flex-column">
+                <p style="margin: 0px 4px 0px 16px;">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, mollitia. Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </div>
+            <p>
+              En résumé, j'ai involontairement maché, frappé, écrasé et détruit ma tête en tentant d'écrire cette phrase pour quelle ne serve à rien.
+            </p>
+
+            <p>
+              Je vous souhaite bonne chance dans la découverte du monde de Minecraft ! Nous sommes une communauté ouverte et nous évoluons    constamment : soyez près pour la prochaine aventure !
+            </p>
+          </div>
+
+          <div class="flex-column flex-container-fixing">
+            <div class="container-text" style="margin:0;flex:1;">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, in ea. Repellat cupiditate recusandae impedit nam aliquam odio soluta  iure, sunt modi pariatur quos consequatur beatae unde molestiae ratione eveniet.
+              </p>
             </div>
 
-            <div class="flex-column">
-              <p style="margin: 10px 10px 10px 30px;">
-                C'est intéressant de voir comment Minecraft peut être comme la vrai vie : nous sommes libres de faire tout ce que npus voulons, mais des  règles fondamentales sont là et ne peuvent pas être brisées sans "dévier" le système.
+            <div class="container-image-2">
+              <a href="images/basDePageAccueilImageOriginal.png" target="_blank"><img src="images/basDePageAccueilImage.png" class="image2"   alt="bas-header-image"></a>
+            </div>
+
+            <div class="container-text" style="margin:0;flex:1;">
+              <p>
+                C'est intéressant de voir comment Minecraft peut être comme la vrai vie : nous sommes libres de faire tout ce que npus voulons,   mais des  règles fondamentales sont là et ne peuvent pas être brisées sans "dévier" le système.
               </p>
             </div>
           </div>
-          <p>
-            En résumé, j'ai involontairement maché, frappé, écrasé et détruit ma tête en tentant d'écrire cette phrase pour quelle ne serve à rien.
-          </p>
-          
-          <p>
-            Je vous souhaite bonne chance dans la découverte du monde de Minecraft ! Nous sommes une communauté ouverte et nous évoluons   constamment : soyez près pour la prochaine aventure !
-          </p>
         </div>
 
-        <div class="flex-column flex-container-fixing">
-          <div class="container-text" style="margin:0;flex:1;">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, in ea. Repellat cupiditate recusandae impedit nam aliquam odio soluta iure, sunt modi pariatur quos consequatur beatae unde molestiae ratione eveniet.
-            </p>
-          </div>
-
-          <div class="container-image-2">
-            <a href="images/basDePageAccueilImageOriginal.png" target="_blank"><img src="images/basDePageAccueilImage.png" class="image2" alt="bas-header-image"></a>
-          </div>
-
-          <div class="container-text" style="margin:0;flex:1;">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, alias. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quasi ratione officiis quis? Odio quas blanditiis nobis ipsam mollitia dolor?
-            </p>
-          </div>
+        <div class="container-text">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas distinctio vitae aperiam sunt accusantium fugiat officiis numquam  voluptate illum, maiores vero incidunt eius obcaecati illo at. Repellat illum odio ad quasi odit provident repudiandae. Facere itaque  quae soluta asperiores aliquid. Assumenda, debitis officia. Sunt ducimus voluptatibus porro, cum temporibus optio!<
+          </p>
         </div>
       </div>
 
-      <div class="container-text">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas distinctio vitae aperiam sunt accusantium fugiat officiis numquam voluptate illum, maiores vero incidunt eius obcaecati illo at. Repellat illum odio ad quasi odit provident repudiandae. Facere itaque quae soluta asperiores aliquid. Assumenda, debitis officia. Sunt ducimus voluptatibus porro, cum temporibus optio!<
-        </p>
+      <div class="container-right">
+        <div class="container-right-top">
+          <p>
+            Devenez membre en vous connectant avec votre nom d'utilisateur Minecraft pour avoir accès à toutes les fonctionnalités du serveur !
+          </p>
+          <a href="espace-membre.html">Se connecter</a>
+        </div>
+
+        <div class="container-right-top">
+          <p>
+            Page des mise à jour du serveur !
+          </p>
+          <a href="mise-a-jour.html">En savoir plus ...</a>
+        </div>
       </div>
     </div>
-    
     <!-- footering -->
 
     <footer>
       <div class="copyright">Copyright &copy; <span id="annee"></span> cender</div>
       <ul class="social-icons">
-        <li><a href="https://discord.gg/zk3PKhpm3G"><i class="fa-brands fa-discord"></i></a></li>
+        <li><a href="https://discord.gg"><i class="fa-brands fa-discord"></i></a></li>
         <li><a href="https://github.com/enderbird"><i class="fa-brands fa-github"></i></a></li>
-        <li><a href="https://www.youtube.com/@Ender_Bird_"><i class="fa-brands fa-youtube"></i></a></li>
-        <li><a href="https://www.curseforge.com/members/ender_bird__/projects"><i class="fa-solid fa-weight-hanging"></i></a></li>
-        <li><a href="https://www.reddit.com/user/Mysterious-Ebb1314/"><i class="fa-brands fa-reddit"></i></a></li>
+        <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://www.curseforge.com"><i class="fa-solid fa-weight-hanging"></i></a></li>
+        <li><a href="https://www.reddit.com"><i class="fa-brands fa-reddit"></i></a></li>
       </ul>
     </footer>
   </body>

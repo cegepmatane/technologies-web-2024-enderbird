@@ -1,1 +1,63 @@
 @import url(general.css);
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.titre-header {
+    font-family: "MinecraftFontRegular";
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 6px;
+    align-self: stretch;
+
+    background-size: 100%;
+
+    width: 20%;
+    margin: 16px;
+    h1 {
+        padding-top: 10%;
+        line-height: 160%;
+        height: 100%;
+    } 
+}
+
+.container-texte {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #D7D0FF;
+    margin: 16px 16px 16px 0;
+    padding: 16px;
+    box-shadow: 0px 0px 12px black;
+}
+
+.texte {
+    background-color: #ECF6FF;
+    padding: 16px;
+    margin: 8px;
+    flex: 1 25%;
+
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-family: "MinecraftFontRegular";
+        text-decoration: underline 4px;
+        font-size: 1.5em;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    p {
+        background-color: #D7D0FF;
+        margin-top: 16px;
+        padding: 8px;
+        text-align: justify;
+        font-family: "ProFontWindowsRegular";
+        font-size: 1.2em;
+        line-height: 120%;
+    }
+}
