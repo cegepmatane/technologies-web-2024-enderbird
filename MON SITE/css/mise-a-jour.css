@@ -5,6 +5,49 @@
     flex-direction: column;
 }
 
+@keyframes AnimationGradient {
+    0% {
+        background-position:left top;
+        background-size: 500% 500%;
+        box-shadow: 0px 0px 16px #fd0048;
+    }
+    25% {
+        background-position:right top;
+        background-size: 500% 500%;
+        box-shadow: 0px 0px 16px #0022ff;
+    }
+    50% {
+        background-position:right bottom;
+        box-shadow: 0px 0px 16px #fd006e;
+    }
+    75% {
+        background-position:left bottom;
+        background-size: 500% 500%;
+        box-shadow: 0px 0px 16px #2b00ff;
+    }
+    100% {
+        background-position:left top;
+        background-size: 500% 500%;
+        box-shadow: 0px 0px 16px #fd0048;
+    }
+}
+
+h2 {
+    background: radial-gradient(ellipse at left top, #fd004872, transparent), radial-gradient(ellipse at right top, #0022ffe3, transparent), radial-gradient(ellipse at left bottom, #2b00ffe5, transparent), radial-gradient(ellipse at right bottom, #fd006e, #8c00ff);
+
+    border-top: 4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(255, 255, 255);
+    margin-top: 32px;
+
+    font-family: "MinecraftFontRegular";
+    padding: 16px;
+    font-size: 1.3em;
+    color: #fff;
+    text-shadow: -2px -2px 4px #261370, 2px 2px 4px #4b1370;
+
+    animation: AnimationGradient 30s ease infinite;
+}
+
 p {
     border: 16px solid #ECF6FF;
     background-color: #D7D0FF;
@@ -16,4 +59,30 @@ p {
     text-shadow: 0px 0px 2px white;
     line-height: 120%;
     flex: 1;
+}
+
+/* aller en haut de la page */
+.container-haut-page {
+    margin-top: 64px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ECF6FF;
+    align-items: center;
+}
+a.haut-page {
+    text-decoration: none;
+    font-family: "MinecraftFontRegular";
+    text-align: center;
+    font-size: 1.3em;
+    color: #ECF6FF;
+    text-shadow: 4px 4px 0px black;
+    width: 100%;
+    background-image: url("../images/Purple-Wool-Block.jpg");
+    background-size: 10%;
+    padding: 16px;
+}
+
+a.haut-page:hover {
+    transform: scale(0.99);
 }

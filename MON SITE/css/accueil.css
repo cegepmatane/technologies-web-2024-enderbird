@@ -9,14 +9,15 @@
   display: flex;
 }
 
+/* les 2 containers de chaques côtés */
 .container-left, .container-right {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 
   width: 70em;
-  background-image: url("../images/Deepslate-Bricks-Block.png");
-  background-size: 5%;
+  background-image: url("../images/Amethyst-Block.png");
+  background-size: 20%;
   background-position: center;
   background-attachment: fixed;
 
@@ -24,6 +25,8 @@
   margin: -4px 0px -10em 0px; 
   box-shadow: 0px 0px 12px rgb(248, 233, 255);
 }
+
+/* container des compteurs */
 .container-left-top {
   width: 100%;
   background-size: 40%;
@@ -37,14 +40,13 @@
 
   display: flex;
   flex-direction: column;
-  
-  p {
-    color: white;
-    font-family: "MinecraftFontBold";
-    text-shadow: -1px -1px 4px rgb(0, 0, 0), 1px 1px 4px rgb(0, 0, 0);
-    text-align: center;
-    margin-bottom: 1em;
-  }
+}
+.container-left-top p {
+  color: white;
+  font-family: "MinecraftFontBold";
+  text-shadow: -1px -1px 4px rgb(0, 0, 0), 1px 1px 4px rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 1em;
 }
 .container-left-top:nth-child(1) {
   background-image: url("../images/Blue-Wool-Block.jpg");
@@ -58,7 +60,6 @@
 .container-left-top:nth-child(4) {
   background-image: url("../images/Red-Wool-Block.jpg");
 }
-
 #decompte1, #decompte2, #decompte3, #decompte4 {
   text-align: center;
   font-family: "MinecraftFontBold";
@@ -70,9 +71,9 @@
   background-color: rgba(223, 96, 255, 0.229);
 }
 
+/* les "se connecter"s et "en savoir plus"s */
 .container-right-top {
   width: 100%;
-  background-image: url("../images/Deepslate-Bricks-Block.png");
   background-size: 40%;
   
   padding: 1em 0;
@@ -86,38 +87,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  p {
-    color: white;
-    font-family: "MinecraftFontRegular";
-    font-size: 0.9em;
-    text-shadow: 0px 0px 2px rgb(26, 0, 27);
-    line-height: 140%;
+}
+.container-right-top p {
+  color: white;
+  font-family: "MinecraftFontRegular";
+  font-size: 0.9em;
+  text-shadow: 0px 0px 2px rgb(26, 0, 27);
+  line-height: 140%;
 
-    box-shadow: 0px 0px 10px rgb(90, 0, 93);
-    background-color: rgba(142, 0, 163, 0.681);
-    padding: 16px;
-    margin-bottom: 2em;
-  }
-
-  a {
-    font-family: "MinecraftFontBold";
-    width: 80%;
-    padding: 8px;
-    background-color: #2C1C61;
-    color: rgb(255, 255, 255);
-    transition: transform 1s; /* Animation */
-    text-decoration: none;
-    text-align: center;
-    font-size: 0.8em;
-    box-shadow: 0px 0px 12px black;
-  }
-  a:hover {
+  box-shadow: 0px 0px 10px rgb(90, 0, 93);
+  background-color: rgba(142, 0, 163, 0.681);
+  padding: 16px;
+  margin: 0.5em 0.5em;
+}
+.container-right-top a {
+  font-family: "MinecraftFontBold";
+  width: 80%;
+  padding: 8px;
+  background-color: #2C1C61;
+  color: rgb(255, 255, 255);
+  transition: transform 1s; /* Animation */
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8em;
+  box-shadow: 0px 0px 12px black;
+}
+.container-right-top a:hover {
     background-color: rgb(255, 255, 255);
     color: black;
     transform: scale(1.01);
     box-shadow: rgb(255, 228, 76) 0px 0px 40px 5px;
-  }
 }
 .container-right-top:nth-child(1) {
   background-image: url("../images/Yellow-Wool-Block.jpg");
@@ -126,7 +125,7 @@
   background-image: url("../images/Cyan-Wool-Block.png");
 }
 
-/* container au centre */
+/* container au centre (pour le reste)*/
 .container-center {
   display: inline-flex;
   flex-direction: column;
@@ -153,12 +152,11 @@
 }
 
 .flex-container-fixing {
-  margin: 8px;
-  align-items: none;
+  margin: 4px;
   flex: 0 50%;
 }
 
-p {
+.container-text p {
   font-family: "ProFontWindowsRegular";
   font-size: 1.2em;
   text-align: justify;
@@ -174,12 +172,11 @@ p {
   background-color: #ECF6FF;
   flex: 2;
 }
-
 .container-image-2 {
   padding: 16px;
   background-color: #ECF6FF;;
   align-items: stretch;
-  margin: 16px 0 16px 0;
+  margin: 8px 0 8px 0;
 }
 
 .image1 {

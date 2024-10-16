@@ -21,16 +21,15 @@ function valider(e) {
     // regexEmail
     let regexEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
-    if ((regexEmail.test(email.value)) == false || email.value == "exemple123@hotmail.com") {
+    if ((regexEmail.test(email.value)) == false || email.value == "averagestudent1234@hotmail.com") {
         e.preventDefault()
-        erreurEmail.className = "erreur"
-        if ((regexEmail.test(email.value)) == false) {
+        if (email.value == 0 || email.value == "averagestudent1234@hotmail.com") {
+            erreurEmail.textContent = "Entrez votre email !";
+            email.value = "";
+        }else {
             erreurEmail.textContent = "Mauvais format pour l'email";
         }
-        if (email.value == 0 || email.value == "exemple123@hotmail.com") {
-            erreurEmail.textContent = "Entrez votre email !";
-        }
-        
+        erreurEmail.className = "erreur"
         email.className = "invalide";
         emailLabel.className = "label";
         email.focus();

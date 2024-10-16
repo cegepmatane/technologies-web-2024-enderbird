@@ -16,12 +16,13 @@
 
     width: 20%;
     margin: 16px;
-    h1 {
-        padding-top: 10%;
-        line-height: 160%;
-        height: 100%;
-    } 
 }
+.titre-header h1 {
+    padding-top: 10%;
+    line-height: 160%;
+    height: 100%;
+} 
+
 
 .container-texte {
     display: flex;
@@ -42,22 +43,20 @@
 
     display: flex;
     flex-direction: column;
-
-    h2 {
-        font-family: "MinecraftFontRegular";
-        text-decoration: underline 4px;
-        font-size: 1.5em;
-        width: 100%;
-        object-fit: contain;
-    }
-
-    p {
-        background-color: #D7D0FF;
-        margin-top: 16px;
-        padding: 8px;
-        text-align: justify;
-        font-family: "ProFontWindowsRegular";
-        font-size: 1.2em;
-        line-height: 120%;
-    }
+}
+.texte h2 {
+    font-family: "MinecraftFontRegular";
+    text-decoration: underline 4px;
+    font-size: 1.5em;
+    width: 100%;
+    object-fit: contain;
+}
+p {
+    background-color: #D7D0FF;
+    margin-top: 16px;
+    padding: 8px;
+    text-align: justify;
+    font-family: "ProFontWindowsRegular";
+    font-size: 1.2em;
+    line-height: 120%;
 }

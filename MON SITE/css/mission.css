@@ -1,16 +1,5 @@
 @import url(general.css);
 
-h1 {
-    color: white;
-    text-shadow: 0 3px 3px rgb(208, 38, 255), -2px -2px 4px rgb(22, 0, 39);
-    p {
-        font-size: 0.8em;
-        color: white;
-        text-shadow: 0 3px 3px rgb(208, 38, 255), -2px -2px 4px rgb(22, 0, 39);
-    }
-  }
-
-  
 table {
     border-spacing: 0px;
     width: 100%;

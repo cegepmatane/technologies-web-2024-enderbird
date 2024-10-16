@@ -9,7 +9,6 @@
 .titre-header {
     text-shadow: 0 3px 3px rgb(208, 38, 255), -2px -2px 4px rgb(22, 0, 39);
 
-    background-color: #0b0018;
     border: 6px solid #f1e6ff;
 
     width: calc(100% - 32px);
@@ -20,7 +19,7 @@
     box-shadow: -1px -1px 3px rgb(187, 0, 255), 2px 2px 3px rgb(187, 0, 255);
 }
 
-.les-articles {
+section {
     display: inline-flex;
     flex-direction: column;
     align-items: stretch;
@@ -28,7 +27,7 @@
     width: 100%;
 }
 
-.article {
+article {
     flex-grow: 1;
     flex-basis: 100%;
     display: flex;
@@ -76,7 +75,7 @@ p {
     margin-bottom: 16px;
 }
 
-.container-text-custom {
+h2 {
     font-family: "MinecraftFontRegular", sans-serif;
     flex-grow: 10;
     border: 8px solid #ab7ce5;
@@ -93,22 +92,22 @@ p {
     margin-left: 16px;
     font-family: "MinecraftFontRegular", sans-serif;
     border: 8px solid rgb(136, 66, 222);
-    a {
-        font-size: 0.9em;
-        letter-spacing: 2px;
-        background-color: rgb(88, 32, 157);
-        height: 100%;
-        padding: 16px;
-        display: block;
-        color: #ffffff;
-        text-shadow: -1px -1px 3px rgb(252, 172, 255), 1px 1px 3px rgb(247, 175, 255);
-        text-align: center;
-        text-decoration: none;
-    }
+}
+.bouton a {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    background-color: rgb(88, 32, 157);
+    height: 100%;
+    padding: 16px;
+    display: block;
+    color: #ffffff;
+    text-shadow: -1px -1px 3px rgb(252, 172, 255), 1px 1px 3px rgb(247, 175, 255);
+    text-align: center;
+    text-decoration: none;
+}
 
-    a:hover {
-        background-color: rgb(255, 255, 255);
-        color: black;
-        box-shadow: rgb(255, 228, 76) 0px 0px 60px 10px;
-    }
+.bouton a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: rgb(255, 228, 76) 0px 0px 60px 10px;
 }

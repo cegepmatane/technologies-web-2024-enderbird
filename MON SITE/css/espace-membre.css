@@ -1,7 +1,7 @@
 @import url(general.css);
 
 body {
-    background: url(../images/Crying-Obsidian-Block.png);
+    background: url("../images/Crying-Obsidian-Block.png");
     background-size: 5%;
     background-attachment: local;
 }
@@ -17,7 +17,7 @@ form {
 
     background-image: url("../images/Bedrock-Block.png");
     background-attachment: fixed;
-    background-repeat: 50%;
+    background-size: 20%;
 
     font-family: "MinecraftFontRegular";
     font-size: 1.1em;
@@ -112,14 +112,22 @@ input[type="submit"]:hover {
 }
 .valide {
     border: 2px solid #00ff00 !important;
-     background-color: #ffffff !important;
+    background-color: #ffffff !important;
 }
 
 .label {
     color: #ff0000;
 }
 .labelNice {
-  color: #00ff00;
+    color: #00ff00;
+}
+
+.selectorAutreNo {
+    display: none;
+}
+
+.selectorAutreYes {
+    display: block;
 }
 
 

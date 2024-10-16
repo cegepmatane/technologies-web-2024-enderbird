@@ -16,12 +16,13 @@
 
     width: 20%;
     margin: 16px;
-    h1 {
-        padding-top: 10%;
-        line-height: 160%;
-        height: 100%;
-    } 
 }
+.titre-header h1 {
+    padding-top: 10%;
+    line-height: 160%;
+    height: 100%;
+} 
+
 
 .container-texte {
     display: flex;
@@ -42,36 +43,33 @@
 
     display: flex;
     flex-direction: column;
+}
+.texte h2 {
+    font-family: "MinecraftFontRegular";
+    text-decoration: underline 4px;
+    font-size: 1.5em;
+    width: 100%;
+    object-fit: contain;
+    line-height: 150%;
+}
 
-    h2 {
-        font-family: "MinecraftFontRegular";
-        text-decoration: underline 4px;
-        font-size: 1.5em;
-        width: 100%;
-        object-fit: contain;
-        line-height: 150%;
-    }
-
-    p {
-        background-color: #D7D0FF;
-        margin-top: 16px;
-        padding: 8px;
-        text-align: justify;
-        font-family: "ProFontWindowsRegular";
-        font-size: 1.2em;
-        line-height: 120%;
-
-        flex: 1;
-        
-        a {
-            text-decoration: none;
-            color: rgb(246, 238, 255);
-            text-shadow: 0px 0px 4px black;
-        }
-
-        a:hover {
-            text-shadow: none;
-            color: rgb(132, 0, 255);
-        }
-    }
+p {
+    background-color: #D7D0FF;
+    margin-top: 16px;
+    padding: 8px;
+    text-align: justify;
+    font-family: "ProFontWindowsRegular";
+    font-size: 1.2em;
+    line-height: 120%;
+    
+    flex: 1;
+}
+p a {
+    text-decoration: none;
+    color: rgb(246, 238, 255);
+    text-shadow: -1px -1px 4px black, 1px 1px 4px black;
+}
+p a:hover {
+    text-shadow: none;
+    color: rgb(132, 0, 255);
 }

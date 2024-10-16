@@ -2,36 +2,39 @@
 
 const placeholderEmail = document.querySelector("#email");
 
-placeholderEmail.addEventListener("focus", avecFocus);
-placeholderEmail.addEventListener("blur", sansFocus);
+placeholderEmail.addEventListener("focus", etreAvecFocus);
+placeholderEmail.addEventListener("blur", etreSansFocus);
+placeholderEmail.addEventListener("mouseenter", etreAvecSouris);
+placeholderEmail.addEventListener("mouseleave", etreSansSouris);
 
-placeholderEmail.value = "averageStudent1234@hotmail.com";
-placeholderEmail.className = "placeholder";
+placeholderEmail.value = "averagestudent1234@hotmail.com";
+placeholderEmail.style.color = '#b3b0c1';
 
-function avecFocus() {
-    if (placeholderEmail.value == "averageStudent1234@hotmail.com") {
+function etreAvecFocus() {
+    if (placeholderEmail.value == "averagestudent1234@hotmail.com") {
         placeholderEmail.value = "";
+        placeholderEmail.style.color = 'black';
+    }
+    if (placeholderEmail.value != "averagestudent1234@hotmail.com") {
+        placeholderEmail.style.color = 'black';
+    }
+}
+function etreSansFocus() {
+    if (placeholderEmail.value == "") {
+        placeholderEmail.value = "averagestudent1234@hotmail.com";
+    }
+    if (placeholderEmail.value == "averagestudent1234@hotmail.com") {
+        placeholderEmail.style.color = '#b3b0c1';
     }
 }
 
-function sansFocus() {
-    if (placeholderEmail.value == "") {
-        placeholderEmail.value = "averageStudent1234@hotmail.com";
+function etreAvecSouris() {
+    if (placeholderEmail.value == "averagestudent1234@hotmail.com") {
+        placeholderEmail.style.color = '#4400ff';
     }
-
-    if (placeholderEmail.value == "averageStudent1234@hotmail.com" && placeholderEmail.className != "invalide" && placeholderEmail.className != "valide") {
-        placeholderEmail.className = "placeholder";
-    }else {
-        if (placeholderEmail.value == "averageStudent1234@hotmail.com") {
-            placeholderEmail.style.color = '#b3b0c1';
-        }
-    }
-
-    if (placeholderEmail.value != "averageStudent1234@hotmail.com" && placeholderEmail.className != "invalide" && placeholderEmail.className != "valide") {
-        placeholderEmail.className = "placeholderFocus";
-    }else {
-        if (placeholderEmail.value != "averageStudent1234@hotmail.com") {
-            placeholderEmail.style.color = 'black';
-        }
+}
+function etreSansSouris() {
+    if (placeholderEmail.value == "averagestudent1234@hotmail.com") {
+        placeholderEmail.style.color = '#b3b0c1';
     }
 }

@@ -1,7 +1,7 @@
 @import url(general.css);
 
 body {
-    background: url(../images/Crying-Obsidian-Block.png);
+    background: url("../images/Crying-Obsidian-Block.png");
     background-size: 5%;
     background-attachment: local;
 }
@@ -17,7 +17,7 @@ form {
 
     background-image: url("../images/Bedrock-Block.png");
     background-attachment: fixed;
-    background-repeat: 50%;
+    background-size: 20%;
 
     font-family: "MinecraftFontRegular";
     font-size: 1.1em;
@@ -45,19 +45,17 @@ fieldset {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    #reasoning {
-        flex-grow: 100;
-    }
+}
+#reasoning {
+    flex-grow: 100;
 }
 
 /* TEXT AREA (BIG SPACE) */
-#textAreaLabel {
-    textarea {
-        margin: 10px 10px;
-        width: calc(100% - 20px);
-        height: 20em;
-        resize: none;
-    }
+#textAreaLabel textarea {
+    margin: 10px 10px;
+    width: calc(100% - 20px);
+    height: 20em;
+    resize: none;
 }
 
 /* Toutes les options en communs */
@@ -99,21 +97,7 @@ input[type="submit"]:hover {
     box-shadow: rgb(255, 228, 76) 0px 0px 60px 10px;
 }
 
-
 /* POUR LE FORM EN JAVASCRIPT */
-.placeholder {
-    color: rgb(179, 176, 193);
-    font-weight: none;
-}
-
-.placeholderFocus {
-    color: black;
-}
-
-.placeholder:hover {
-    color: rgb(68, 0, 255);
-}
-
 .erreur, .invalide, .valide {
     padding: 10px;
 }

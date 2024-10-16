@@ -1,3 +1,5 @@
+// Ça s'appelle "pseudo", mais l'email peut être entré dans cette case
+// C'est juste le nom de la section qui s'appelle "pseudo"
 const pseudo = document.querySelector("#pseudo");
 const password1 = document.querySelector("#password1");
 const password2 = document.querySelector("#password2");
@@ -13,16 +15,22 @@ const password2Label = document.querySelector("#password2Label");
 document.querySelector("#formulaire").addEventListener("submit", valider, true);
 
 function valider(e) {
+    //regexPseudoMinecraft
     let regexPseudo = /^[a-zA-Z0-9_]{3,16}$/;
+    //regexEmail
+    let regexEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
-    if (regexPseudo.test(pseudo.value) == false || pseudo.value == 0) {
+    if ((regexPseudo.test(pseudo.value) == false && regexEmail.test(pseudo.value) == false) || pseudo.value == "averagestudent1234@hotmail.com / iAmSTEve" || pseudo.value == "averagestudent1234@hotmail.com") {
         e.preventDefault();
-        if ((regexPseudo.test(pseudo.value)) == false) {
-            erreurPseudo.textContent = "Pseudo impossible (format Minecraft)";
+        if (pseudo.value == "averagestudent1234@hotmail.com / iAmSTEve" || pseudo.value == 0) {
+            erreurPseudo.textContent = "Entrez quelque chose !";
+            pseudo.value = "";
+        }else if (pseudo.value == "averagestudent1234@hotmail.com") {
+            erreurPseudo.textContent = "Nuh uh !";
+        }else {
+            erreurPseudo.textContent = "Format invalide";
         }
-        if (pseudo.value == 0) {
-            erreurPseudo.textContent = "Entrez votre pseudo !";
-        }
+        erreurPseudo.className = "erreur";
         pseudo.className = "invalide";
         pseudoLabel.className = "label";
         pseudo.focus();
@@ -40,7 +48,11 @@ function valider(e) {
 
     if (password2.value == 0 || password2.value != password1.value) {
         e.preventDefault();
-        erreurPassword2.textContent = "Doit être identique";
+        if (password2.value == 0) {
+            erreurPassword2.textContent = "Entrez le mot de passe";
+        }else {
+            erreurPassword2.textContent = "Doit être identique";
+        }
         password2.className = "invalide";
         password2Label.className = "label";
         password2.focus();
@@ -51,9 +63,12 @@ function valider(e) {
 pseudo.addEventListener("blur", verifierPseudo, true);
 
 function verifierPseudo() {
+    //regexPseudoMinecraft
     let regexPseudo = /^[a-zA-Z0-9_]{3,16}$/;
+    //regexEmail
+    let regexEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
     
-    if (regexPseudo.test(pseudo.value) == true) {
+    if ((regexPseudo.test(pseudo.value) == true || regexEmail.test(pseudo.value) == true) && pseudo.value != "averagestudent1234@hotmail.com / iAmSTEve" && pseudo.value != "averagestudent1234@hotmail.com") {
         pseudo.className = "valide";
         pseudoLabel.className = "labelNice";
         erreurPseudo.textContent = "";

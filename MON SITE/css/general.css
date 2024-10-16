@@ -22,7 +22,7 @@
 }
 
 body {
-    background: url(../images/Amethyst-Block.png);
+    background: url("../images/Deepslate-Bricks-Block.png");
     background-size: 5%;
     background-attachment: local;
 }
@@ -43,7 +43,6 @@ nav ul {
 }
 
 nav li {
-    /* float: left; */
     flex: 1;
     position: relative;
     background-color: rgba(44, 28, 97, 0.884);
@@ -59,13 +58,11 @@ nav li a {
     display: block;
     padding: 10px;
     color:rgb(193, 212, 255);
-    /* font-weight: 10; */
     border: 5px solid rgba(36, 19, 90, 0.229);
 }
 
 nav li a:hover {
     color: rgb(44, 28, 97);
-    /* background-color: rgba(214, 243, 255, 0.682);  IDK IF IT IS NECESSAIRY, BUT IT DOES SOMETHING!!!!*/
 }
 
 /* C'est pour afficher la séléction de la page sur la barre */
@@ -96,11 +93,7 @@ nav li ul{
 
 nav ul li:hover ul{
     display: block;
-}    
-/* 
-nav ul li:hover ul li{
-    float: right;
-} */
+} 
 
 /* pour faire garder le texte du bouton Informations */
 nav ul li:hover > a.text-color {
@@ -109,7 +102,7 @@ nav ul li:hover > a.text-color {
 
 /* image header */
 .header{
-    border-bottom: 4px solid #b67efc;
+    border-bottom: 4px solid #22004b;
     box-shadow: 0px 0px 8px #8C4ED7;
     width: 100%; /* pour prendre tout l'écran en largeur*/
 }
@@ -127,19 +120,18 @@ nav ul li:hover > a.text-color {
     margin: 16px auto 32px auto;
     width: 35%;
 
-    background: url(../images/Purple-Wool-Block.png);
+    background: url("../images/Purple-Wool-Block.png");
     border: 8px solid #23034D;
     background-size: 15%;
     padding: 0;
-    
-    h1 {
-      color: white;
-      text-shadow: 0 3px 3px rgb(208, 38, 255), -2px -2px 4px rgb(22, 0, 39);
-      padding: 16px;
-      border: 2px solid white;
-      box-shadow: -1px -1px 3px #d0d0d0, 1px 1px 3px #d0d0d0;
-    } 
 }
+.titre-header h1 {
+    color: white;
+    text-shadow: 0 3px 3px rgb(208, 38, 255), -2px -2px 4px rgb(22, 0, 39);
+    padding: 16px;
+    border: 2px solid white;
+    box-shadow: -1px -1px 3px #d0d0d0, 1px 1px 3px #d0d0d0;
+} 
 
 i {
     font-size: 1.3em;
@@ -147,14 +139,12 @@ i {
 }
 
 /* FOOTER (BAS DE PAGE COPYRIGHT */
-
 .container {
     height: auto;
 }
 
-
 footer {
-    background: url(../images/Bedrock-Block.png);
+    background: url("../images/Bedrock-Block.png");
     background-size: 10%;
     background-attachment: local;
     box-sizing: border-box;
@@ -165,7 +155,6 @@ footer {
     display: inline-flex;
     box-shadow: 0px 0px 32px #000000;
 }
-  
 .copyright {
     position: absolute; /* parent doit être en relative quand absolute */
     text-align: center;
@@ -216,13 +205,11 @@ footer {
     padding: 5px 0px 5px 5px;
     /* list-style-type: none; */
     margin: 20px 10px 20px 0;
-
-    /* .social-icons li a */
-    a {
-        padding: 17px;
-        display: block;
-        color: rgba(44, 28, 97, 0.884);
-    }
+}
+.social-icons li a {
+    padding: 17px;
+    display: block;
+    color: rgba(44, 28, 97, 0.884);
 }
   
 @keyframes icon-animation {
@@ -236,6 +223,7 @@ footer {
     }
     25%{
         transition: transform ease-in-out;
+        box-shadow: rgb(0, 0, 0) 0px 0px 0px 8px;
         transform: scale(0.8);
     }
     50% {
@@ -248,8 +236,7 @@ footer {
         transform: scale(1);
     }
     80% {
-        transform: translateY(none);
-        
+        transform: translateY(0px);
     }
 }
   
@@ -258,40 +245,45 @@ footer {
     animation: icon-animation 1s;
     transform: translateY(-5px);
 
-    box-shadow: 0 5px 0px rgb(231, 198, 255);
+    box-shadow: 0 5px 0px rgb(0, 0, 0);
 }
 
+/* discord */
 .social-icons li:hover:nth-child(1) {
     background-color: #7289DA;
-    a {
-        color: white;
-    }
 }
-  
+.social-icons li:hover:nth-child(1) a {
+    color: white;
+}
+
+/* github */
 .social-icons li:hover:nth-child(2) {
     background-color: #171515;
-    a {
-        color: white;
-    }
 }
-  
+.social-icons li:hover:nth-child(2) a {
+    color: white;
+}
+
+/* youtube */
 .social-icons li:hover:nth-child(3) {
     background-color: #FF0000;
-    a {
-        color: white;
-    }
 }
-  
+.social-icons li:hover:nth-child(3) a {
+    color: white;
+}
+
+/* curseforge */
 .social-icons li:hover:nth-child(4) {
     background-color: #fff;
-    a {
-      color: #f86434;
-    }
 }
-  
+.social-icons li:hover:nth-child(4) a {
+    color: #f86434;
+}
+
+/* reddit */
 .social-icons li:hover:nth-child(5) {
     background-color: #FF4500;
-    a {
-        color: white;
-    }
+}
+.social-icons li:hover:nth-child(5) a {
+    color: white;
 }
