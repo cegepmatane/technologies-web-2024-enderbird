@@ -136,7 +136,6 @@
   flex-direction: row;
   align-items: stretch;
 }
-
 .flex-column {
   display: flex;
   flex-direction: column;
