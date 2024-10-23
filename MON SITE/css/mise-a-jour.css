@@ -45,7 +45,7 @@ h2 {
     color: #fff;
     text-shadow: -2px -2px 4px #261370, 2px 2px 4px #4b1370;
 
-    animation: AnimationGradient 30s ease infinite;
+    animation: AnimationGradient linear 30s infinite;
 }
 
 p {
