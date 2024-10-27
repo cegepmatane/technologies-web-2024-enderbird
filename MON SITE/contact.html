@@ -9,6 +9,7 @@
     <script src="js/placeholder-contact.js" defer></script>
     <script src="js/validation-contact.js" defer></script>
    
+    <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -64,7 +65,11 @@
         <form action="traitement.html" method="post" id="formulaire">
             <fieldset>
                 <div id="emailLabel">
-                    <label for="email">De :</label>
+                    <label for="email"
+                      class="tooltip"
+                      data-balloon-length="xlarge"
+                      data-balloon-pos="down-left"
+                      aria-label="Veuillez entrer votre email pour avoir une réponse !">De :</label>
                     <input type="text" name="email" id="email">
                     <span id="erreurEmail" class="erreur"></span>
                 </div>
@@ -72,7 +77,11 @@
             
             <fieldset>
                 <div id="reasonLabel">
-                  <label for="reason">Description :</label>
+                  <label for="reason"
+                    class="tooltip"
+                    data-balloon-length="xlarge"
+                    data-balloon-pos="up-left"
+                    aria-label="Mettez un titre à votre description / question">Description :</label>
                   <select name="reason" id="reason">
                       <option value="Pas de valeur" selected>- - - Sélectionner la raison - - -</option>
                       <option value="Connection">Connection (mods, compatibilité...)</option>

@@ -10,6 +10,7 @@
     <script src="js/placeholder-espace-membre.js" defer></script>
     <script src="js/validation-espace-membre.js" defer></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -65,7 +66,12 @@
         <form action="traitement.html" method="post" id="formulaire">
             <fieldset>
               <div id="pseudoLabel">
-                <label for="pseudo">Pseudonyme :</label>
+                <label
+                  for="pseudo"
+                  class="tooltip"
+                  data-balloon-length="xlarge"
+                  data-balloon-pos="down-left"
+                  aria-label="Veuillez entrer votre email ou votre pseudo Minecraft">Email / Pseudonyme :</label>
                 <input type="text" name="pseudo" id="pseudo">
                 <span id="erreurPseudo" class="erreur"></span>
               </div>

@@ -132,6 +132,15 @@ input[type="submit"]:hover {
     display: block;
 }
 
+/* tool tips (info bulles) */
+.tooltip {
+    --balloon-text-color: black;
+    --balloon-color: #a9a6ff;
+    --balloon-font-size: 0.8em;
+    --balloon-move: 0px;
+    --balloon-border-radius: 0;
+}
+
 /* interresting
 @media screen and (max-width:500px) {
     .container {
