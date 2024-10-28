@@ -105,6 +105,7 @@ nav ul li:hover > a.text-color {
     border-bottom: 4px solid #22004b;
     box-shadow: 0px 0px 8px #8C4ED7;
     width: 100%; /* pour prendre tout l'écran en largeur*/
+    pointer-events: none; /* pour ne pas être draggable */
 }
 
 .titre-header {

@@ -1,0 +1,171 @@
+@import url(general.css);
+
+* {
+    /* TROP COOOOLLLLLL */
+    scrollbar-width: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    width: 80%;
+}
+
+.titre-header-vignettes {
+    color: white;
+    font-family: "MinecraftFontBold";
+    text-align: center;
+    align-self: center;
+    
+    letter-spacing: 5px;
+    font-size: 2em;
+
+    width: 100%;
+    margin: 16px;
+
+    background: url("../images/Purple-Wool-Block.jpg");
+    background-size: 50%;
+
+    text-shadow: 0 3px 3px rgb(208, 38, 255), -2px -2px 4px rgb(22, 0, 39);
+
+    border: 6px solid #f1e6ff;
+
+    padding: 16px;
+    box-shadow: -1px -1px 3px rgb(187, 0, 255), 2px 2px 3px rgb(187, 0, 255);
+}
+
+.container-profil-selecteur {
+    /* pas mal tout pour le scroll */
+    background-color: #ecf6ff;
+
+    scroll-behavior: auto;
+    scrollbar-width: none;
+
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    height: 200px;
+    padding-bottom: 32px;
+}
+.vignette-profil {
+    flex: none; /* pour le scroll */
+    
+    height: 100%;
+    
+    border: 16px #CAC9FC solid;
+
+    margin: 16px 0 16px 16px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.vignette-profil:first-child {
+    margin-left: 0;
+}
+.vignette-profil:last-child {
+    margin-right: 0;
+}
+.vignette-profil:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.vignette-profil img {
+    width: 100%;
+    height: 100%;
+
+    /* PAS DRAGABLE ET SELECTIONABLES */
+    pointer-events: none;
+    user-select: none;
+}
+
+#zone-affichage {
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("../images/2023-02-12_15.06.27\(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f1e6ff;
+    background-size: cover;
+
+    transition: background-size 2s ease-out;
+    
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    border: 16px solid #ecf6ff;
+}
+
+.detail-profil {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.profil-nom {
+    font-family: "MinecraftFontRegular", sans-serif;
+    
+    border: 8px solid #8f7ce5;
+    background-color: #6c42de;
+    color: #fff;
+    padding: 16px;
+    padding-left: 24px;
+    letter-spacing: 4px;
+    font-size: 1.4em;
+    text-shadow: 0 3px 3px rgb(42, 38, 255), -2px -2px 6px rgb(158, 165, 246);
+}
+.container-infos-profil {
+    display: inline-flex;
+    flex-direction: row;
+}
+.profil-description {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profil-description h5 {
+    font-family: "MinecraftFontRegular", sans-serif;
+    
+    border: 8px solid #8f7ce5;
+    background-color: #6c42de;
+    color: #fff;
+    padding: 12px;
+    padding-left: 24px;
+    letter-spacing: 4px;
+    font-size: 0.9em;
+    text-shadow: 0 3px 3px rgb(42, 38, 255), -2px -2px 6px rgb(158, 165, 246);
+}
+.profil-description p {
+    font-family: "ProFontWindowsRegular";
+
+    font-size: 1.3em;
+    text-align: justify;
+    padding: 16px;
+
+    border: 8px solid #ecf6ff;
+    background-color: rgba(212, 203, 255, 0.89);
+    width: 100%;
+
+    margin-bottom: 32px;
+}
+
+.profil-image {
+    flex: 1;
+
+    align-self: center;
+
+    pointer-events: none;
+
+    width: 50%;
+
+    transition: transform 2s ease-out;
+}

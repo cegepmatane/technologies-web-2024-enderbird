@@ -27,7 +27,7 @@ form {
 
     border: none;
     box-shadow: 0px 0px 10px rgb(255, 205, 218);
-    padding: 16px;
+    padding: 32px;
 }
 
 fieldset {
@@ -132,10 +132,10 @@ input[type="submit"]:hover {
 
 /* tool tips (info bulles) */
 .tooltip {
-    --balloon-text-color: black;
-    --balloon-color: #a9a6ff;
+    --balloon-text-color: rgb(255, 255, 255);
+    --balloon-color: #151445;
     --balloon-font-size: 0.8em;
-    --balloon-move: 0px;
+    --balloon-move: -2px;
     --balloon-border-radius: 0;
 }
 

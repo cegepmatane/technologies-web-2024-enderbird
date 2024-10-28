@@ -5,6 +5,49 @@
     flex-direction: column;
 }
 
+.version {
+    height: 100%; /* prend la hauteur de l'écran*/
+    width: 100%;
+    position: relative;
+}
+
+.background-1 {
+    background: url("../images/2023-02-10_21.00.51.png");
+}
+.background-2 {
+    background: url("../images/2022-12-31_22.24.32.png");
+}
+.background-3 {
+    background: url("../images/2022-06-22_20.55.57.png");
+}
+.background-4 {
+    background: url("../images/2022-12-31_22.42.48.png");
+}
+.background-5 {
+    background: url("../images/2023-01-01_16.07.56.png");
+}
+.background-6 {
+    background: url("../images/2024-08-28_13.09.15.png");
+}
+.background-7 {
+    background: url("../images/2023-01-01_16.07.56.png");
+}
+.background-8 {
+    background: url("../images/2024-08-28_13.09.28.png");
+}
+.background-9 {
+    background: url("../images/2022-08-19_21.18.37.png");
+}
+.background-10 {
+    background: url("../images/2022-12-31_22.24.32.png");
+}
+.background-1, .background-2, .background-3, .background-4, .background-5, .background-6, .background-7, .background-8, .background-9, .background-10 {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 @keyframes AnimationGradient {
     0% {
         background-position:left top;
@@ -37,7 +80,6 @@ h2 {
 
     border-top: 4px solid rgb(255, 255, 255);
     border-bottom: 4px solid rgb(255, 255, 255);
-    margin-top: 32px;
 
     font-family: "MinecraftFontRegular";
     padding: 16px;
@@ -49,9 +91,9 @@ h2 {
 }
 
 p {
-    border: 16px solid #ECF6FF;
+    border: 32px solid #ECF6FF;
     background-color: #D7D0FF;
-    margin: 8px 16px;
+    margin: 64px;
     padding: 8px;
     text-align: justify;
     font-family: "ProFontWindowsRegular";
@@ -63,7 +105,6 @@ p {
 
 /* aller en haut de la page */
 .container-haut-page {
-    margin-top: 64px;
     padding: 16px;
     display: flex;
     flex-direction: column;

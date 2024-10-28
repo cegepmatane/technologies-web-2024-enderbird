@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/vignette-detail.css">
+
+    <!-- SCRIPTS -->
+    <script src="js/annee.js" defer></script>
+    <script src="js/vignette-profils-et-parallax.js" defer></script>
+    <script src="js/profils-scroll.js" defer></script>
+
+    <!-- toujours mettre icon fontawesome link à après -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    <title>Profil des membres - Confusion SMP</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="actif"><i class="fa-solid fa-house"></i> Accueil</a>
+          </li>
+
+          <li>
+            <a href="informations.html" class="text-color"><i class="fa-solid fa-circle-info"></i> Informations</a>
+            <ul>
+              <li><a href="sous-info1.html">Règles</a></li>
+              <li><a href="sous-info2.html">Album photo</a></li>
+              <li><a href="sous-info3.html">Pourquoi ?</a></li>
+              <li><a href="sous-info4.html">FAQ</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="mission.html"><i class="fa-solid fa-cube"></i> Mission</a>
+          </li>
+          
+          <li>
+            <a href="espace-membre.html"><i class="fa-solid fa-headset"></i> Espace membre</a>
+          </li>
+
+          <li>
+            <a href="contact.html"><i class="fa-sharp fa-solid fa-envelope"></i> Contact</a>
+          </li>
+        
+          <li>
+            <a href="mise-a-jour.html"><i class="fa-regular fa-star"></i> Mise à jour</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <img src="images/headerAccueilImage.png" class="header" alt="header-image">
+    </header>
+
+    <div class="container">
+
+      <div class="titre-header-vignettes">Membres : </div>
+
+      <div class="container-profil-selecteur">
+          <div class="vignette-profil" id="cedric">
+              <img src="images/profils/head-ender_bird_.png" alt="Ender_Bird_"> <!-- https://skinmc.net/avatars -->
+          </div>
+
+          <div class="vignette-profil" id="alexandre">
+              <img src="images/profils/head-7137O5.png" alt="7137O5">
+          </div>
+
+          <div class="vignette-profil" id="lucie">
+            <img src="images/profils/head-FlavClav.png" alt="FlavClav">
+          </div>
+
+          <div class="vignette-profil" id="victor">
+              <img src="images/profils/head-victor1381.png" alt="victor1381">
+          </div>
+
+          <div class="vignette-profil" id="julien">
+              <img src="images/profils/head-ExtantMoss15108.png" alt="ExtantMoss15108">
+          </div>
+
+          <div class="vignette-profil" id="charles">
+              <img src="images/profils/head-Chuckins.png" alt="Chuckins">
+          </div>
+      </div>
+
+
+
+      <div id="zone-affichage"></div>
+
+
+
+      <!-- PROFILS PAGES -->
+
+      <div class="detail-profil" id="detail-cedric">
+        <h4 class="profil-nom">Ender_Bird_</h4>
+        
+        <div class="container-infos-profil">
+          <img class="profil-image" src="images/profils/body-Ender_Bird_.png" alt="Ender_Bird_"> <!-- https://mcskins.top/avatar-maker -->
+          
+          <div class="profil-description">
+              <h5>Qui suis-je ?</h5>
+              <p>
+                On me surnomme Angry Bird, Ced et Cednic. Je suis le fondateur du serveur et c'est moi qui a tout codé ce site !
+              </p>
+              <h5>Contactez-moi</h5>
+              <p>
+                Si vous avez besoin d'aide, je suis disponible sur cette <a href="mailto:2434232@cgmatane.qc.ca">adresse email</a> et sinon, vous pouvez aller dans la <a href="contact.html">page contact</a> (je suis lui qui réponds aux problèmes et aux questions !)
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-profil" id="detail-alexandre">
+        <h4 class="profil-nom">7137O5</h4>
+
+        <div class="container-infos-profil">
+          <img class="profil-image" src="images/profils/body-7137O5.png" alt="7137O5">
+
+          <div class="profil-description">
+              <h5>Qui suis-je ?</h5>
+              <p>
+                On me surnomme Alex. Je n'ai pas été payé pour faire une description.
+              </p>
+              <h5>Contactez-moi</h5>
+              <p>
+                Disponible par <a href="https://discord.com" target="_blank">Discord</a> avec le nom z.null !
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-profil" id="detail-lucie">
+        <h4 class="profil-nom">FlavClav</h4>
+
+        <div class="container-infos-profil">
+          <img class="profil-image" src="images/profils/body-FlavClav.png" alt="FlavClav">
+
+          <div class="profil-description">
+              <h5>Qui suis-je ?</h5>
+              <p>
+                On me surnomme Luce, Luciuce et Luciole. Je n'ai pas été payée pour faire une description.
+              </p>
+              <h5>Contactez-moi</h5>
+              <p>
+                Passez par <a href="vignette-detail.html">Ender_Bird_</a> pour me contacter. (Il va me faire passer votre message.) 
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-profil" id="detail-victor">
+          <h4 class="profil-nom">victor1381</h4>
+
+          <div class="container-infos-profil">
+            <img class="profil-image" src="images/profils/body-victor1381.png" alt="victor1381">
+
+            <div class="profil-description">
+                <h5>Qui suis-je ?</h5>
+                <p>
+                  On me surnomme Viktaure, Victoaure et Victorrrrr. Je n'ai pas été payée pour faire une description.
+                </p>
+                <h5>Contactez-moi</h5>
+                <p>
+                  Si vous voulez me parler, allez sur le serveur <a href="sous-info1.html">(par ici)</a> !
+                </p>
+            </div>
+          </div>
+      </div>
+
+      <div class="detail-profil" id="detail-julien">
+          <h4 class="profil-nom">ExtantMoss15108</h4>
+
+          <div class="container-infos-profil">
+            <img class="profil-image" src="images/profils/body-ExtantMoss15108.png" alt="ExtantMoss15108">
+  
+            <div class="profil-description">
+                <h5>Qui suis-je ?</h5>
+                <p>
+                  On me surnomme Chucky et Tchârlze. Je n'ai pas été payée pour faire une description.
+                </p>
+                <h5>Contactez-moi</h5>
+                <p>
+                  Si vous voulez me parler, allez sur le serveur <a href="sous-info1.html">(par ici)</a> !
+                </p>
+            </div>
+          </div>
+      </div>
+
+      <div class="detail-profil" id="detail-charles">
+        <h4 class="profil-nom">Chuckins</h4>
+
+        <div class="container-infos-profil">
+          <img class="profil-image" src="images/profils/body-Chuckins.png" alt="Chuckins">
+
+          <div class="profil-description">
+              <h5>Qui suis-je ?</h5>
+              <p>
+                On me surnomme Ced et Cednic. Je suis le fondateur du serveur et c'est moi qui a tout codé ce site !
+              </p>
+              <h5>Contactez-moi ?</h5>
+              <p>
+                Si vous avez besoin d'aide, je suis disponible sur cette <a href="">addresse email</a> et sinon, vous pouvez aller dans la  page contact (je suis lui qui réponds aux problèmes et aux questions !)
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- footering -->
+
+    <footer>
+      <div class="copyright">Copyright &copy; <span id="annee"></span> cender</div>
+      <ul class="social-icons">
+        <li><a href="https://discord.gg"><i class="fa-brands fa-discord"></i></a></li>
+        <li><a href="https://github.com/enderbird"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://www.curseforge.com"><i class="fa-solid fa-weight-hanging"></i></a></li>
+        <li><a href="https://www.reddit.com"><i class="fa-brands fa-reddit"></i></a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

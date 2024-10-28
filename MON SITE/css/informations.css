@@ -1,9 +1,10 @@
 @import url(general.css);
 
 .container {
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
+    flex-direction: row;
 }
+
 
 /* Regarder le général pour le titre header de base */
 .titre-header {
@@ -53,7 +54,7 @@ article {
 }
 
 .container-image {
-    width: 20%;
+    width: 16%;
     margin: 16px 0 12px 16px;
     height: 100%;
 }
@@ -64,11 +65,11 @@ article {
 
 /* plus */
 .boite-texte {
-    display: flex;
+    display: inline-flex !important; /* Appear of disappear, it stays */
+    opacity: 100% !important;
     flex: 1;
     flex-direction: row;
-    align-content: space-between;
-
+    
     background-color: rgba(212, 203, 255, 0.89);
     margin-bottom: 16px;
 }
@@ -82,16 +83,45 @@ article {
 
     flex-grow: 1;
 }
+
+@keyframes Disappear {
+    0% {
+        display: inline;
+        opacity: 100%;
+        filter: blur(0px);
+    }
+    100% {
+        opacity: 0%;
+        filter: blur(3px);
+    }
+}
+@keyframes Appear {
+    0% {
+        opacity: 0%;
+        filter: blur(3px);
+    }
+    100% {
+        opacity: 100%;
+        filter: blur(0px);
+    }
+}
+.disappear {
+    animation: Disappear linear 500ms;
+    display: none;
+}
+.appear {
+    animation: Appear linear 500ms;
+}
+
 .plus-texte {
     display: none;
 }
 .texte.voirplus .plus-texte {
     display: inline;
-    height: auto;
 }
 
 .texte .fin {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .texte.voirplus .fin {
     display: none;
