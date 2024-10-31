@@ -47,6 +47,8 @@ nav li {
     position: relative;
     background-color: rgba(44, 28, 97, 0.884);
     text-align: center;
+
+    transition: 500ms background-color, 500ms color;
 }
 
 nav li:hover {
@@ -57,7 +59,7 @@ nav li a {
     text-decoration: none;
     display: block;
     padding: 10px;
-    color:rgb(193, 212, 255);
+    color: rgb(193, 212, 255);
     border: 5px solid rgba(36, 19, 90, 0.229);
 }
 
@@ -67,9 +69,11 @@ nav li a:hover {
 
 /* C'est pour afficher la séléction de la page sur la barre */
 nav li a.actif {
-    color:#190044;
+    color: #190044;
     background-color: rgba(179, 175, 253, 0.773);
     border: 5px solid rgba(179, 175, 253, 0.284); /* nav li a.info-border */
+
+    transition: 500ms background-color, 500ms color;
 }
 
 nav li a.actif:hover {

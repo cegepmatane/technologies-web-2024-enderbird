@@ -140,10 +140,3 @@ input[type="submit"]:hover {
     --balloon-move: -2px;
     --balloon-border-radius: 0;
 }
-
-/* interresting
-@media screen and (max-width:500px) {
-    .container {
-        width: 100%;
-    }
-} */

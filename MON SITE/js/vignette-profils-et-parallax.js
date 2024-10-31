@@ -1,6 +1,10 @@
 // PARTIE PROFIL
-
 const listeVignettes = document.querySelectorAll(".vignette-profil");
+const zoneAffichage = document.querySelector("#zone-affichage");
+
+const detailDefault = document.querySelector("#detail-cedric");
+zoneAffichage.innerHTML = detailDefault.innerHTML;
+
 
 for (let i = 0; i < listeVignettes.length; i++) {
     listeVignettes[i].addEventListener("mousedown", function () {
@@ -9,8 +13,7 @@ for (let i = 0; i < listeVignettes.length; i++) {
 }
 function afficherDetailProfil(profil) {
   let detail = document.querySelector("#detail-" + profil);
-  let zoneAffichage = document.querySelector("#zone-affichage");
-
+  
   zoneAffichage.innerHTML = detail.innerHTML;
 
   rapetisserProfilImage();
